@@ -1,0 +1,83 @@
+.activiteiten {
+    margin-top: 5rem;
+    background-color: $darkGreen;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    @include breakpoint-up(large) {
+        height: 900px;
+        .isolijnen {
+            position: absolute;
+            &__1 {
+                top: -370px;
+                right: -500px;
+            }
+            &__2 {
+                bottom: -221px;
+                left: -200px;
+            }
+        }
+        &__img {
+            position: absolute;
+            -webkit-transform: scale(0.7);
+            -moz-transform: scale(0.7);
+            -o-transform: scale(0.7);
+            transform: scale(0.7);
+            &__fietsen {
+                top: -50px;
+                right: 300px;
+            }
+            &__petanque {
+                top: 100px;
+                right: -100px;
+            }
+            &__zwemmen {
+                top: 480px;
+                right: 440px;
+            }
+            &__wandelen {
+                top: 550px;
+                right: 150px;
+            }
+            &__paardrijden {
+                top: 350px;
+                right: 750px;
+            }
+            &__vissen {
+                top: 500px;
+                right: 1050px;
+            }
+        }
+        &__text__wrapper {
+            width: 40%;
+            margin-left: 5rem;
+            line-height: 2.5ch;
+        }
+    }
+    @include breakpoint-down(large) {
+        height: 90vh;
+        .isolijnen {
+            position: absolute;
+            &__1 {
+                scale: 0.3;
+                top: -450px;
+                right: -650px;
+            }
+            &__2 {
+                scale: 0.5;
+                bottom: -200px;
+                left: -223px;
+            }
+        }
+        &__img {
+            display: none;
+        }
+        &__text__wrapper {
+            margin-top: 3rem;
+            line-height: 2ch;
+            button {
+                margin-top: 2rem;
+            }
+        }
+    }
+}

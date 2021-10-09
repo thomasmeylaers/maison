@@ -1,0 +1,39 @@
+.accomodaties__ratings {
+    @include breakpoint-up(large) {
+        position: relative;
+        margin-top: 10rem;
+        margin-bottom: -13rem;
+        .container {
+            display: flex;
+        }
+        &__unit {
+            background-color: white;
+            border-radius: 50px;
+            padding: 2rem;
+            font-size: 14px;
+            line-height: 2.5ch;
+            &:not(:last-child) {
+                margin-right: 4rem;
+            }
+        }
+    }
+    @include breakpoint-down(large) {
+        position: relative;
+        margin-top: 10rem;
+        margin-bottom: -12rem;
+        .container {
+            display: flex;
+        }
+        &__unit {
+            background-color: white;
+            border-radius: 50px;
+            padding: 2rem;
+            font-size: 14px;
+            line-height: 2.5ch;
+            &:not(:last-child) {
+                margin-right: 4rem;
+                display: none;
+            }
+        }
+    }
+}

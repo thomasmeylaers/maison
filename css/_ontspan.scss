@@ -1,0 +1,71 @@
+.ontspan {
+    margin-top: 5rem;
+    .section__title {
+        h1 {
+            margin-bottom: 0;
+        }
+    }
+    &__text {
+        margin-bottom: 4rem;
+    }
+    &__box {
+        h1 {
+            margin-bottom: 0;
+            margin-top: 0.5rem;
+            font-weight: 500;
+            font-size: large;
+        }
+        p {
+            font-size: 14px;
+            margin-top: 0.5rem;
+            font-weight: 200;
+            line-height: 2ch;
+        }
+        img {
+            width: 3rem;
+        }
+    }
+    @include breakpoint-up(large) {
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__left__wrapper {
+            width: 50%;
+            margin-left: 5rem;
+            line-height: 2.5ch;
+        }
+        &__img__wrapper {
+            width: 40%;
+            height: 80vh;
+            background-image: url('/img/Maison-Laventure_15.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: -2rem;
+            border-radius: 30px;
+        }
+        &__boxes__wrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 3rem;
+            row-gap: 1rem;
+        }
+    }
+    @include breakpoint-down(large) {
+        &__img__wrapper {
+            display: none;
+        }
+        &__boxes__wrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 2rem;
+        }
+        &__box {
+            padding: 1rem;
+        }
+    }
+}

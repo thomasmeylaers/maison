@@ -1,0 +1,122 @@
+.contact {
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    position: relative;
+    &__form {
+        input,
+        textarea {
+            margin-bottom: 2rem;
+            border: none;
+            border-radius: 50px;
+        }
+        input {
+            padding: 1rem;
+        }
+        textarea {
+            resize: none;
+            padding: 2rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        button {
+            background-color: $darkOrange;
+            color: white;
+        }
+        &__names {
+            display: flex;
+            justify-content: space-between;
+            input {
+                width: 45%;
+            }
+            .contact__form__unit {
+                width: 45%;
+            }
+        }
+        &__unit {
+            width: 100%;
+            input {
+                width: 100%;
+            }
+            h4 {
+                margin-bottom: 0.5rem;
+                margin-left: 0.5rem;
+                margin-top: 0;
+                font-weight: lighter;
+            }
+        }
+    }
+    @include breakpoint-up(large) {
+        &__isolijnen {
+            position: absolute;
+            scale: 1;
+            top: 0;
+            left: -11px;
+        }
+        &__bg {
+            background-color: $lightOrange;
+            position: absolute;
+            height: 80vh;
+            width: 80vw;
+            z-index: -10;
+            right: 0;
+            margin-top: 130px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__left__wrapper {
+            padding-left: 5rem;
+            padding-top: 11rem;
+            width: 50%;
+            height: 600px;
+        }
+        &__right__wrapper {
+            width: 45%;
+            padding-right: 5rem;
+            .section__title {
+                margin-bottom: 2rem;
+                img {
+                    width: 2rem;
+                }
+            }
+        }
+    }
+    @include breakpoint-down(large) {
+        background-color: $lightOrange;
+        &__isolijnen {
+            position: absolute;
+            scale: 0.5;
+            top: -56px;
+            left: -100px;
+        }
+        &__bg {
+            display: none;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        &__left__wrapper {
+            // padding-left: 5rem;
+            padding-top: 3rem;
+            order: 2;
+        }
+        &__right__wrapper {
+            .section__title {
+                margin-bottom: 2rem;
+                img {
+                    width: 2rem;
+                }
+            }
+        }
+        input {
+            margin-bottom: 1rem;
+        }
+        iframe {
+            height: 400px;
+        }
+    }
+}

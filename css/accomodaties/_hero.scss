@@ -1,0 +1,38 @@
+.accomodaties__hero {
+    @include breakpoint-up(large) {
+        &__img {
+            position: absolute;
+            z-index: -1;
+            right: -200px;
+            top: 0px;
+            scale: 0.7;
+        }
+        &__wrapper {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__text {
+            width: 75%;
+            font-size: 16px;
+            line-height: 2.5ch;
+            font-weight: 300;
+        }
+        .container {
+            padding: 0 5rem;
+        }
+        margin-top: 20vh;
+    }
+    @include breakpoint-down(large) {
+        margin-top: 25vh;
+        &__text {
+            text-align: justify;
+            font-size: 16px;
+            line-height: 2ch;
+            font-weight: 300;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}

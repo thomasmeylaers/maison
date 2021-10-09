@@ -1,0 +1,133 @@
+.kamers {
+    .card__mask__1 {
+        background-image: url('/img/ecrivain.jpg');
+    }
+    .card__mask__2 {
+        background-image: url('/img/voyage.jpg');
+    }
+    .card__mask__3 {
+        background-image: url('/img/nature.jpg');
+    }
+    .card__mask__4 {
+        background-image: url('/img/romantique.jpg');
+    }
+    @include breakpoint-up(large) {
+        &__text__wrapper {
+            width: 40%;
+            margin-left: 5rem;
+            line-height: 2.5ch;
+        }
+        button {
+            background-color: $darkOrange;
+            color: white;
+            margin-top: 2rem;
+        }
+        &__cards__wrapper {
+            width: 100%;
+            padding: 0 5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__card {
+            margin-top: 5rem;
+            width: 23%;
+            border-radius: 52px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+            button {
+                font-size: 10px;
+                img {
+                    width: 0.6rem;
+                }
+            }
+            h1 {
+                margin-left: 2rem;
+            }
+        }
+        .card__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            padding-bottom: 2rem;
+            button {
+                margin: 0;
+                padding: 0.5rem 1.25rem;
+            }
+            p {
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+        .card__mask {
+            width: 100%;
+            height: 18.75rem;
+            border-radius: 52px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    @include breakpoint-down(large) {
+        .section__title {
+            margin-top: 2rem;
+        }
+        &__text__wrapper {
+            font-size: 14px;
+            line-height: 2.5ch;
+        }
+        button {
+            background-color: $darkOrange;
+            color: white;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-size: 14px;
+        }
+        &__cards__wrapper {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 2rem;
+        }
+        &__card {
+            justify-self: center;
+            // margin-top: 5rem;
+            width: 95%;
+            border-radius: 30px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            button {
+                font-size: 10px;
+                img {
+                    width: 0.6rem;
+                }
+            }
+            h1 {
+                margin-left: 2rem;
+                font-size: large;
+                margin-bottom: 0;
+            }
+        }
+        .card__bottom {
+            padding: 0 2rem;
+            padding-bottom: 2rem;
+            button {
+                margin: 0;
+                padding: 0.5rem 1.25rem;
+            }
+            p {
+                margin: 0;
+                margin-bottom: 1rem;
+                font-weight: 200;
+                font-size: 14px;
+            }
+        }
+        .card__mask {
+            width: 100%;
+            height: 12rem;
+            border-radius: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
