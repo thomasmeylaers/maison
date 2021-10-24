@@ -1,15 +1,15 @@
 .kamers {
     .card__mask__1 {
-        background-image: url('/img/ecrivain.jpg');
+        background-image: url('../img/ecrivain.jpg');
     }
     .card__mask__2 {
-        background-image: url('/img/voyage.jpg');
+        background-image: url('../img/voyage.jpg');
     }
     .card__mask__3 {
-        background-image: url('/img/nature.jpg');
+        background-image: url('../img/nature.jpg');
     }
     .card__mask__4 {
-        background-image: url('/img/romantique.jpg');
+        background-image: url('../img/romantique.jpg');
     }
     @include breakpoint-up(large) {
         &__text__wrapper {

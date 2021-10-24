@@ -33,22 +33,22 @@
             border-radius: 20px 20px 0 0;
         }
         .fietsen {
-            background-image: url("../../img/activiteiten/fietsen.png");
+            background-image: url('../img/activiteiten/fietsen.png');
         }
         .paardrijden {
-            background-image: url("../../img/activiteiten/paardrijden.png");
+            background-image: url("../img/activiteiten/paardrijden.png");
         }
         .golfen {
-            background-image: url("../../img/activiteiten/golf.jpg");
+            background-image: url("../img/activiteiten/golf.jpg");
         }
         .vissen {
-            background-image: url("../../img/activiteiten/vissen.png");
+            background-image: url("../img/activiteiten/vissen.png");
         }
         .zwemmen {
-            background-image: url("../../img/activiteiten/zwemmen.png");
+            background-image: url("../img/activiteiten/zwemmen.png");
         }
         .wandelen {
-            background-image: url("../../img/activiteiten/wandelen.png");
+            background-image: url("../img/activiteiten/wandelen.png");
         }
     }
     &__isolijnen {
@@ -82,7 +82,7 @@
             width: 100%;
             position: absolute;
             bottom: 0;
-            background-image: url("../../img/zwembad.jpg");
+            background-image: url("../img/zwembad.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
