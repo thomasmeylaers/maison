@@ -1,0 +1,10 @@
+- Splide voor accomodaties
+- Splide voor recensies op mobiel
+- Teksten invullen
+- Animaties
+- Form
+- Verschillende talen
+
+- Foto's vervangen?
+
+

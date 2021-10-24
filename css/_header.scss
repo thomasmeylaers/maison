@@ -29,5 +29,7 @@
         }
     }
     @include breakpoint-up(large) {}
-    @include breakpoint-down(large) {}
+    @include breakpoint-down(large) {
+        background-color: white;
+    }
 }

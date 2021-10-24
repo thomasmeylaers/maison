@@ -55,18 +55,19 @@
         }
     }
     @include breakpoint-down(large) {
-        height: 90vh;
+        // height: 90vh;
+        padding-bottom: 5rem;
         .isolijnen {
             position: absolute;
             &__1 {
-                scale: 0.3;
-                top: -450px;
-                right: -650px;
+                width: 500px;
+                top: -200px;
+                right: -200px;
             }
             &__2 {
-                scale: 0.5;
-                bottom: -200px;
-                left: -223px;
+                width: 250px;
+                bottom: -100px;
+                left: -100px;
             }
         }
         &__img {

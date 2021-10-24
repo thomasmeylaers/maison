@@ -1,0 +1,60 @@
+.contact__hero {
+    position: relative;
+    @include breakpoint-up(large) {
+        &__bg {
+            height: 1000px;
+            width: 50vw;
+            position: absolute;
+            background-color: $lightOrange;
+            z-index: -5;
+            right: 0;
+        }
+        &__img {
+            position: absolute;
+            z-index: -1;
+            right: -200px;
+            top: 0px;
+            scale: 0.7;
+        }
+        &__wrapper {
+            width: 70%;
+        }
+        hr {
+            width: 100px;
+            margin: 0.5rem 0;
+            padding: 0;
+            color: lightgrey;
+        }
+        &__title {
+            h1 {
+                margin-bottom: 0;
+                font-size: 34px;
+                font-weight: 800;
+            }
+        }
+        &__text {
+            color: lightgrey;
+            font-size: 16px;
+            line-height: 3.5ch;
+            font-weight: 300;
+            padding-top: 0.5rem;
+            margin-bottom: 3rem;
+        }
+        margin-top: 30vh;
+        margin-bottom: 5rem;
+    }
+    @include breakpoint-down(large) {
+        margin-top: 13vh;
+        &__title {
+            h1 {
+                margin-bottom: 0rem;
+            }
+        }
+        &__text {
+            display: none;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}

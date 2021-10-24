@@ -1,0 +1,95 @@
+.contact__form {
+    position: relative;
+    .fixed-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__form__wrapper {
+        width: 100%;
+        margin-left: 5rem;
+        label {
+            margin-left: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+        &__grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+            &__unit {
+                label,
+                input {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @include breakpoint-up (large) {
+        padding-bottom: 5rem;
+        &__form__wrapper {
+            margin-top: -240px;
+            &__mobile {
+                display: none;
+            }
+        }
+        #map__mobile {
+            display: none;
+        }
+    }
+    @include breakpoint-down(large) {
+        .fixed-container {
+            flex-direction: column;
+        }
+        &__map__wrapper {
+            order: 2;
+        }
+        &__bg {
+            position: absolute;
+            background-color: $lightOrange;
+            height: 700px;
+            width: 100vw;
+            top: 10px;
+            z-index: -5;
+        }
+        &__form__wrapper {
+            margin-left: 0;
+            padding: 3rem 0;
+            padding-bottom: 0;
+            form {
+                padding-bottom: 5rem;
+            }
+            hr {
+                width: 100px;
+                margin: 0.5rem 0;
+                padding: 0;
+                color: lightgrey;
+            }
+            &__mobile {
+                color: lightgrey;
+                font-size: 16px;
+                line-height: 3.5ch;
+                font-weight: 300;
+                padding-top: 0.5rem;
+                margin-bottom: 3rem;
+            }
+            &__grid {
+                grid-template-columns: 1fr;
+                input {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        &__map__wrapper {
+            iframe {
+                display: none;
+            }
+        }
+        #map__mobile {
+            width: 100%;
+            height: 400px;
+        }
+    }
+}
