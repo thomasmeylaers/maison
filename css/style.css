@@ -707,19 +707,19 @@ a {
 }
 
 .kamers .card__mask__1 {
-  background-image: url("/img/ecrivain.jpg");
+  background-image: url("../img/ecrivain.jpg");
 }
 
 .kamers .card__mask__2 {
-  background-image: url("/img/voyage.jpg");
+  background-image: url("../img/voyage.jpg");
 }
 
 .kamers .card__mask__3 {
-  background-image: url("/img/nature.jpg");
+  background-image: url("../img/nature.jpg");
 }
 
 .kamers .card__mask__4 {
-  background-image: url("/img/romantique.jpg");
+  background-image: url("../img/romantique.jpg");
 }
 
 @media (min-width: 64em) {
@@ -1036,6 +1036,7 @@ a {
   padding-top: 5rem;
   padding-bottom: 8rem;
   position: relative;
+  overflow: hidden;
 }
 
 .contact__form input,
@@ -1333,7 +1334,7 @@ a {
     width: 50%;
     position: absolute;
     height: 100%;
-    background-image: url("../../img/activiteiten/petanque.png");
+    background-image: url("../img/accomodaties/nature/accomodaties.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1363,7 +1364,7 @@ a {
   .accomodaties__hero__img {
     width: 100%;
     height: 250px;
-    background-image: url("../../img/activiteiten/petanque.png");
+    background-image: url("../img/accomodaties/nature/accomodaties.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1411,22 +1412,22 @@ a {
     border-radius: 50px;
   }
   .accomodaties__kamers__unit__image__ecrivain {
-    background-image: url("/img/ecrivain.jpg");
+    background-image: url("../img/ecrivain.jpg");
   }
   .accomodaties__kamers__unit__image__nature {
-    background-image: url("/img/nature.jpg");
+    background-image: url("../img/nature.jpg");
   }
   .accomodaties__kamers__unit__image__voyage {
-    background-image: url("/img/voyage.jpg");
+    background-image: url("../img/voyage.jpg");
   }
   .accomodaties__kamers__unit__image__romantique {
-    background-image: url("/img/romantique.jpg");
+    background-image: url("../img/romantique.jpg");
   }
   .accomodaties__kamers__unit__image__chopin {
-    background-image: url("/img/ecrivain.jpg");
+    background-image: url("../img/ecrivain.jpg");
   }
   .accomodaties__kamers__unit__image__gite {
-    background-image: url("/img/gite.jpg");
+    background-image: url("../img/gite.jpg");
   }
   .accomodaties__kamers__unit__middle {
     padding: 0rem 5rem;
@@ -1512,22 +1513,22 @@ a {
     border-radius: 50px;
   }
   .accomodaties__kamers__unit__image__ecrivain {
-    background-image: url("/img/ecrivain.jpg");
+    background-image: url("../img/ecrivain.jpg");
   }
   .accomodaties__kamers__unit__image__nature {
-    background-image: url("/img/nature.jpg");
+    background-image: url("../img/nature.jpg");
   }
   .accomodaties__kamers__unit__image__voyage {
-    background-image: url("/img/voyage.jpg");
+    background-image: url("../img/voyage.jpg");
   }
   .accomodaties__kamers__unit__image__romantique {
-    background-image: url("/img/romantique.jpg");
+    background-image: url("../img/romantique.jpg");
   }
   .accomodaties__kamers__unit__image__chopin {
-    background-image: url("/img/ecrivain.jpg");
+    background-image: url("../img/ecrivain.jpg");
   }
   .accomodaties__kamers__unit__image__gite {
-    background-image: url("/img/gite.jpg");
+    background-image: url("../img/gite.jpg");
   }
   .accomodaties__kamers__unit__middle {
     padding: 0rem 2rem;
@@ -1807,7 +1808,7 @@ a {
     width: 50%;
     position: absolute;
     height: 100%;
-    background-image: url("../../img/activiteiten/petanque.png");
+    background-image: url("../img/activiteiten/cedric.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1837,7 +1838,7 @@ a {
   .activiteiten__hero__img {
     width: 100%;
     height: 250px;
-    background-image: url("../../img/activiteiten/petanque.png");
+    background-image: url("../img/activiteiten/cedric.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1889,27 +1890,27 @@ a {
 }
 
 .activiteiten__activiteiten__unit .fietsen {
-  background-image: url("../../img/activiteiten/fietsen.png");
+  background-image: url("../img/activiteiten/fietsen.png");
 }
 
 .activiteiten__activiteiten__unit .paardrijden {
-  background-image: url("../../img/activiteiten/paardrijden.png");
+  background-image: url("../img/activiteiten/paardrijden.png");
 }
 
 .activiteiten__activiteiten__unit .golfen {
-  background-image: url("../../img/activiteiten/golf.jpg");
+  background-image: url("../img/activiteiten/golf.jpg");
 }
 
 .activiteiten__activiteiten__unit .vissen {
-  background-image: url("../../img/activiteiten/vissen.png");
+  background-image: url("../img/activiteiten/vissen.png");
 }
 
 .activiteiten__activiteiten__unit .zwemmen {
-  background-image: url("../../img/activiteiten/zwemmen.png");
+  background-image: url("../img/activiteiten/zwemmen.png");
 }
 
 .activiteiten__activiteiten__unit .wandelen {
-  background-image: url("../../img/activiteiten/wandelen.png");
+  background-image: url("../img/activiteiten/wandelen.png");
 }
 
 .activiteiten__activiteiten__isolijnen img {
@@ -1947,7 +1948,7 @@ a {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-image: url("../../img/zwembad.jpg");
+    background-image: url("../img/zwembad.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
