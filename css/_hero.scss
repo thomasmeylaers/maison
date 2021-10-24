@@ -1,98 +1,56 @@
-$heroBackgroundHeightLarge: 42vh;
-$heroBackgroundHeightSmall: 30vh;
 .hero {
-    margin-top: 8vh;
     position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    &__bg {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        position: absolute;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        span {
+            font-size: 20px;
+            // font-weight: 400;
+        }
+        font-size: 40px;
+        line-height: 2.5ch;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    video {
+        z-index: -2;
+        position: absolute;
+        // height: 100vh;
+        // width: 100%;
+    }
     @include breakpoint-up(large) {
-        &__background {
-            position: absolute;
-            background-color: $lightOrange;
-            height: $heroBackgroundHeightLarge;
+        video {
             width: 100%;
-            z-index: -100;
-        }
-        &__slogan {
-            padding: 0 10rem;
-            width: 100%;
-            text-align: center;
-            h1 {
-                font-size: 80px;
-                margin: 0;
-                padding-top: 3rem;
-                margin-bottom: 2rem;
-            }
-        }
-        &__images {
-            padding: 0 3rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 100%;
-            img {
-                border-radius: 30px;
-            }
-            #img1 {
-                width: 25%;
-            }
-            #img2 {
-                width: 35%;
-            }
-            #img3 {
-                width: 28%;
-            }
-        }
-        &__isolijnen {
-            position: absolute;
-        }
-        #iso1 {
-            top: calc(42vh - 256px);
-        }
-        #iso2 {
-            top: $heroBackgroundHeightLarge
         }
     }
     @include breakpoint-down(large) {
-        &__background {
-            position: absolute;
-            background-color: $lightOrange;
-            height: 200px;
-            width: 100%;
-            z-index: -500;
+        video {
+            height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
         }
-        &__slogan {
-            padding-top: 2rem;
-            text-align: center;
-        }
-        &__images {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 100%;
-            img {
-                width: 100%;
-                border-radius: 30px;
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 0 1rem;
+            span {
+                font-weight: 200;
+                font-size: 16px;
             }
-            #img1 {
-                width: 25%;
-            }
-            #img2 {
-                width: 35%;
-            }
-            #img3 {
-                width: 28%;
-            }
-        }
-        &__isolijnen {
-            position: absolute;
-            width: 5rem;
-            z-index: -5;
-        }
-        #iso1 {
-            top: calc(200px - 110px);
-        }
-        #iso2 {
-            width: 4.2rem;
-            top: 200px
         }
     }
 }

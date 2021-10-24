@@ -28,8 +28,7 @@
         }
     }
     @include breakpoint-up(large) {
-        .container {
-            margin: 0 5rem;
+        .fixed-container {
             display: flex;
             justify-content: space-between;
         }
@@ -52,9 +51,6 @@
         }
     }
     @include breakpoint-down(large) {
-        .container {
-            margin: 0 5rem;
-        }
         &__links {
             margin-top: 3rem;
         }

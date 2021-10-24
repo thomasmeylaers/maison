@@ -14,7 +14,6 @@
     @include breakpoint-up(large) {
         &__text__wrapper {
             width: 40%;
-            margin-left: 5rem;
             line-height: 2.5ch;
         }
         button {
@@ -24,7 +23,6 @@
         }
         &__cards__wrapper {
             width: 100%;
-            padding: 0 5rem;
             display: flex;
             justify-content: space-between;
         }
@@ -102,14 +100,14 @@
                 }
             }
             h1 {
-                margin-left: 2rem;
+                margin-left: 1rem;
                 font-size: large;
                 margin-bottom: 0;
             }
         }
         .card__bottom {
-            padding: 0 2rem;
-            padding-bottom: 2rem;
+            padding: 0 1rem;
+            padding-bottom: 0.5rem;
             button {
                 margin: 0;
                 padding: 0.5rem 1.25rem;

@@ -1,0 +1,106 @@
+.activiteiten__families {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: $lightOrange;
+        width: 100vw;
+        height: 300px;
+        top: -300px;
+        z-index: -10;
+    }
+    background-color: $lightOrange;
+    .fixed-container {
+        position: relative;
+        padding: 0 15rem;
+        padding-bottom: 25rem;
+    }
+    &__text {
+        line-height: 2.5ch;
+    }
+    &__images {
+        img {
+            border-radius: 10px;
+        }
+        #brenne {
+            position: absolute;
+            top: -50px;
+            left: -100px;
+            img {
+                width: 300px;
+            }
+            &::after {
+                content: "Parc naturel de la Brenne";
+                display: block;
+                font-size: 14px;
+            }
+        }
+        #sidiailles {
+            position: absolute;
+            top: 200px;
+            left: -70px;
+            img {
+                width: 250px;
+            }
+            &::after {
+                content: "Sidiailles";
+                display: block;
+                font-size: 14px;
+            }
+        }
+        #chateauroux {
+            position: absolute;
+            img {
+                width: 600px;
+            }
+            bottom: 100px;
+            left: 100px;
+            &::after {
+                content: "Chateauroux";
+                display: block;
+                font-size: 14px;
+            }
+        }
+        #cher {
+            position: absolute;
+            img {
+                width: 300px;
+            }
+            right: 0px;
+            bottom: 150px;
+            &::after {
+                content: "Cher streek";
+                display: block;
+                font-size: 14px;
+            }
+        }
+        #zoo {
+            position: absolute;
+            img {
+                width: 300px;
+            }
+            right: -80px;
+            top: -100px;
+            &::after {
+                content: "Zoo Beauval";
+                display: block;
+                font-size: 14px;
+            }
+        }
+    }
+    @include breakpoint-up(large) {
+        margin-top: 10rem;
+    }
+    @include breakpoint-down(large) {
+        &__images {
+            display: none;
+        }
+        &__title {
+            margin-top: 5rem;
+        }
+        .fixed-container {
+            padding: 0;
+            padding-bottom: 5rem;
+        }
+    }
+}

@@ -63,19 +63,17 @@
             right: 0;
             margin-top: 130px;
         }
-        .container {
+        .fixed-container {
             display: flex;
             justify-content: space-between;
         }
         &__left__wrapper {
-            padding-left: 5rem;
             padding-top: 11rem;
             width: 50%;
             height: 600px;
         }
         &__right__wrapper {
             width: 45%;
-            padding-right: 5rem;
             .section__title {
                 margin-bottom: 2rem;
                 img {
@@ -85,17 +83,19 @@
         }
     }
     @include breakpoint-down(large) {
+        overflow: hidden;
+        padding-bottom: 5rem;
         background-color: $lightOrange;
         &__isolijnen {
             position: absolute;
-            scale: 0.5;
-            top: -56px;
-            left: -100px;
+            width: 214px;
+            top: -21px;
+            left: -11px;
         }
         &__bg {
             display: none;
         }
-        .container {
+        .fixed-container {
             display: flex;
             flex-direction: column;
         }
@@ -116,7 +116,7 @@
             margin-bottom: 1rem;
         }
         iframe {
-            height: 400px;
+            height: 300px;
         }
     }
 }

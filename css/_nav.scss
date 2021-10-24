@@ -6,10 +6,11 @@
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: $lightOrange;
+    transition: all 0.3s ease;
+    // background-color: white;
     &__burger {
         cursor: pointer;
-        div {
+        .cunt {
             width: 25px;
             height: 3px;
             background-color: black;
@@ -19,7 +20,7 @@
     @include breakpoint-up(large) {
         &__logo {
             >img {
-                width: 15rem;
+                width: 10rem;
                 transition: all 0.3s ease;
             }
         }
@@ -39,6 +40,9 @@
                     font-weight: lighter;
                 }
             }
+            .nav__stripe {
+                color: white;
+            }
         }
         &__links {
             display: flex;
@@ -48,12 +52,22 @@
             li {
                 list-style: none;
             }
+            button {
+                background-color: $darkOrange;
+                a {
+                    color: white;
+                }
+            }
+        }
+        .nav__link {
+            color: white;
         }
         &__burger {
             display: none;
         }
     }
     @include breakpoint-down(large) {
+        background-color: white;
         &__logo {
             >img {
                 width: 8rem;
@@ -83,6 +97,8 @@
             position: absolute;
             right: 0px;
             height: 92vh;
+            /* Fallback for browsers that do not support Custom Properties */
+            height: calc(var(--vh, 1vh) * 92);
             top: 8vh;
             background-color: $lightOrange;
             display: flex;
@@ -91,6 +107,7 @@
             justify-content: space-around;
             width: 100vw;
             transform: translateX(100%);
+            padding-left: 0;
             li {
                 list-style: none;
                 opacity: 0;
@@ -98,8 +115,15 @@
             transition: transform 0.5s ease-in;
         }
         &__burger {
-            display: block;
-            div {
+            background-color: $darkOrange;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cunt {
+                background-color: white;
                 transition: all 0.3s ease;
             }
             &__toggle {

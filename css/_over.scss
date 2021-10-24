@@ -9,18 +9,22 @@
             justify-content: flex-start;
         }
         &__text__wrapper {
-            width: 40%;
             margin: auto;
             line-height: 2.5ch;
         }
         &__text {
             p {
                 margin-bottom: 5rem;
+                line-height: 2.5ch;
             }
             button {
                 background-color: $darkOrange;
                 color: white;
             }
+        }
+        .fixed-container {
+            padding-left: calc((100vw - 1173px)/2);
+            padding-right: 3rem;
         }
         &__img {
             display: flex;
@@ -46,7 +50,11 @@
         }
     }
     @include breakpoint-down(large) {
-        margin-top: 4rem;
+        background-color: $lightOrange;
+        padding-top: 4rem;
+        &__text__wrapper {
+            padding-left: 1rem;
+        }
         &__text {
             p {
                 margin-bottom: 1rem;
@@ -67,6 +75,7 @@
         &__img__mobile {
             width: 100%;
             height: 30vh;
+            height: calc(var(--vh, 1vh) * 30);
             background-image: url('/img/Maison-Laventure_15.jpg');
             background-size: cover;
             background-position: center;

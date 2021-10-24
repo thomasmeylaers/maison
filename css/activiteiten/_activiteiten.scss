@@ -1,0 +1,96 @@
+.activiteiten__activiteiten {
+    position: relative;
+    background-color: $darkGreen;
+    padding: 5rem 0;
+    padding-bottom: 20rem;
+    .fixed-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 5rem;
+        z-index: 10;
+    }
+    &__unit {
+        width: 300px;
+        background-color: white;
+        border-radius: 20px;
+        z-index: 1;
+        &__title {
+            padding-left: 1rem;
+            padding-bottom: 0.5rem;
+            padding-top: 1rem;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        &__text {
+            padding: 0 1rem 1rem 1rem;
+        }
+        &__img {
+            width: 100%;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px 20px 0 0;
+        }
+        .fietsen {
+            background-image: url("../../img/activiteiten/fietsen.png");
+        }
+        .paardrijden {
+            background-image: url("../../img/activiteiten/paardrijden.png");
+        }
+        .golfen {
+            background-image: url("../../img/activiteiten/golf.jpg");
+        }
+        .vissen {
+            background-image: url("../../img/activiteiten/vissen.png");
+        }
+        .zwemmen {
+            background-image: url("../../img/activiteiten/zwemmen.png");
+        }
+        .wandelen {
+            background-image: url("../../img/activiteiten/wandelen.png");
+        }
+    }
+    &__isolijnen {
+        img {
+            position: absolute;
+        }
+        #isolijnen1 {
+            z-index: 0;
+            width: 400px;
+            top: 100px;
+            left: -250px;
+        }
+        #isolijnen2 {
+            z-index: 0;
+            width: 500px;
+            bottom: -150px;
+            right: 20vw;
+        }
+    }
+    @include breakpoint-down(large) {
+        overflow: hidden;
+        .fixed-container {
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+        }
+        &__unit {
+            margin: auto;
+        }
+        &__img {
+            height: 250px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background-image: url("../../img/zwembad.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &__isolijnen {
+            #isolijnen2 {
+                bottom: 400px;
+            }
+        }
+    }
+}
