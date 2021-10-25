@@ -1,15 +1,15 @@
 .kamers {
     .card__mask__1 {
-        background-image: url('../img/ecrivain.jpg');
+        background-image: url('../img/accomodaties/relax/relax_1.jpg');
     }
     .card__mask__2 {
-        background-image: url('../img/voyage.jpg');
+        background-image: url('../img/accomodaties/nature/nature_1.jpg');
     }
     .card__mask__3 {
-        background-image: url('../img/nature.jpg');
+        background-image: url('../img/accomodaties/voyage/voyage_1.jpg');
     }
     .card__mask__4 {
-        background-image: url('../img/romantique.jpg');
+        background-image: url('../img/accomodaties/aventure/aventure_3.jpg');
     }
     @include breakpoint-up(large) {
         &__text__wrapper {

@@ -698,7 +698,7 @@ a {
     width: 100%;
     height: 30vh;
     height: calc(var(--vh, 1vh) * 30);
-    background-image: url("/img/Maison-Laventure_15.jpg");
+    background-image: url("../img/index/compressed/1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -707,19 +707,19 @@ a {
 }
 
 .kamers .card__mask__1 {
-  background-image: url("../img/ecrivain.jpg");
+  background-image: url("../img/accomodaties/relax/relax_1.jpg");
 }
 
 .kamers .card__mask__2 {
-  background-image: url("../img/voyage.jpg");
+  background-image: url("../img/accomodaties/nature/nature_1.jpg");
 }
 
 .kamers .card__mask__3 {
-  background-image: url("../img/nature.jpg");
+  background-image: url("../img/accomodaties/voyage/voyage_1.jpg");
 }
 
 .kamers .card__mask__4 {
-  background-image: url("../img/romantique.jpg");
+  background-image: url("../img/accomodaties/aventure/aventure_3.jpg");
 }
 
 @media (min-width: 64em) {
@@ -906,7 +906,7 @@ a {
   .ontspan__img__wrapper {
     width: 40%;
     height: 80vh;
-    background-image: url("../img/ontspan.jpg");
+    background-image: url("../img/index/compressed/ontspan.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2126,12 +2126,13 @@ a {
     margin-bottom: 5rem;
   }
   .contact__hero__bg {
-    height: 1000px;
+    height: 2000px;
     width: 50vw;
     position: absolute;
     background-color: #FCE8DE;
     z-index: -5;
     right: 0;
+    top: -1000px;
   }
   .contact__hero__img {
     position: absolute;
