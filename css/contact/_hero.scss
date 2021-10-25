@@ -2,20 +2,13 @@
     position: relative;
     @include breakpoint-up(large) {
         &__bg {
-<<<<<<< HEAD
             height: 2000px;
-=======
-            height: 1000px;
->>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
             width: 50vw;
             position: absolute;
             background-color: $lightOrange;
             z-index: -5;
             right: 0;
-<<<<<<< HEAD
             top: -1000px;
-=======
->>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
         }
         &__img {
             position: absolute;

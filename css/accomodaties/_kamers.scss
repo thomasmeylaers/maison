@@ -8,21 +8,12 @@
         &__unit {
             .splide {
                 overflow: hidden;
-<<<<<<< HEAD
                 min-width: 400px;
                 border-radius: 50px;
             }
             .splide__slide img {
                 width: 100%;
                 height: auto;
-=======
-                width: 400px;
-                max-height: 500px;
-                img {
-                    width: 100%;
-                    height: auto;
-                }
->>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
             }
             border-radius: 50px;
             padding-right: 5rem;
@@ -41,11 +32,7 @@
                     border-radius: 50px;
                 }
                 &__ecrivain {
-<<<<<<< HEAD
                     background-image: url('../../img/accomodaties/relax/relax_1.jpg');
-=======
-                    background-image: url('../img/ecrivain.jpg');
->>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
                 }
                 &__nature {
                     background-image: url('../img/nature.jpg');
@@ -115,13 +102,10 @@
     }
     @include breakpoint-down(large) {
         padding-top: 1rem;
-<<<<<<< HEAD
         .splide {
             overflow: hidden;
             border-radius: 50px;
         }
-=======
->>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
         &__unit {
             border-radius: 50px;
             margin-top: 5rem;
