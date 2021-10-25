@@ -698,7 +698,11 @@ a {
     width: 100%;
     height: 30vh;
     height: calc(var(--vh, 1vh) * 30);
+<<<<<<< HEAD
     background-image: url("../img/index/compressed/1.jpg");
+=======
+    background-image: url("/img/Maison-Laventure_15.jpg");
+>>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -707,6 +711,7 @@ a {
 }
 
 .kamers .card__mask__1 {
+<<<<<<< HEAD
   background-image: url("../img/accomodaties/relax/relax_1.jpg");
 }
 
@@ -720,6 +725,21 @@ a {
 
 .kamers .card__mask__4 {
   background-image: url("../img/accomodaties/aventure/aventure_3.jpg");
+=======
+  background-image: url("../img/ecrivain.jpg");
+}
+
+.kamers .card__mask__2 {
+  background-image: url("../img/voyage.jpg");
+}
+
+.kamers .card__mask__3 {
+  background-image: url("../img/nature.jpg");
+}
+
+.kamers .card__mask__4 {
+  background-image: url("../img/romantique.jpg");
+>>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
 }
 
 @media (min-width: 64em) {
@@ -1306,7 +1326,11 @@ a {
     position: absolute;
     z-index: -5;
     background-color: #FCE8DE;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 20%;
+>>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
     height: 100%;
   }
   .accomodaties__hero__title {
@@ -1364,11 +1388,19 @@ a {
     margin-bottom: 3rem;
   }
   .accomodaties__hero__compass {
+<<<<<<< HEAD
     display: none;
   }
   .accomodaties__hero__button {
     display: none;
   }
+=======
+    display: none;
+  }
+  .accomodaties__hero__button {
+    display: none;
+  }
+>>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
   .accomodaties__hero__img {
     width: 100%;
     height: 250px;
@@ -1402,10 +1434,17 @@ a {
   }
   .accomodaties__kamers__unit .splide {
     overflow: hidden;
+<<<<<<< HEAD
     min-width: 400px;
     border-radius: 50px;
   }
   .accomodaties__kamers__unit .splide__slide img {
+=======
+    width: 400px;
+    max-height: 500px;
+  }
+  .accomodaties__kamers__unit .splide img {
+>>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
     width: 100%;
     height: auto;
   }
@@ -1420,7 +1459,11 @@ a {
     border-radius: 50px;
   }
   .accomodaties__kamers__unit__image__ecrivain {
+<<<<<<< HEAD
     background-image: url("../../img/accomodaties/relax/relax_1.jpg");
+=======
+    background-image: url("../img/ecrivain.jpg");
+>>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
   }
   .accomodaties__kamers__unit__image__nature {
     background-image: url("../img/nature.jpg");
@@ -1497,10 +1540,13 @@ a {
   .accomodaties__kamers {
     padding-top: 1rem;
   }
+<<<<<<< HEAD
   .accomodaties__kamers .splide {
     overflow: hidden;
     border-radius: 50px;
   }
+=======
+>>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
   .accomodaties__kamers__unit {
     border-radius: 50px;
     margin-top: 5rem;
@@ -1737,9 +1783,12 @@ a {
   .accomodaties__ratings {
     position: relative;
     padding: 5rem 0;
+<<<<<<< HEAD
   }
   .accomodaties__ratings__desktop {
     display: none;
+=======
+>>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
   }
   .accomodaties__ratings .container {
     display: -webkit-box;
@@ -2133,6 +2182,541 @@ a {
     z-index: -5;
     right: 0;
     top: -1000px;
+  }
+  .contact__hero__img {
+    position: absolute;
+    z-index: -1;
+    right: -200px;
+    top: 0px;
+    scale: 0.7;
+  }
+  .contact__hero__wrapper {
+    width: 70%;
+  }
+  .contact__hero hr {
+    width: 100px;
+    margin: 0.5rem 0;
+    padding: 0;
+    color: lightgrey;
+  }
+  .contact__hero__title h1 {
+    margin-bottom: 0;
+    font-size: 34px;
+    font-weight: 800;
+  }
+  .contact__hero__text {
+    color: lightgrey;
+    font-size: 16px;
+    line-height: 3.5ch;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 87.4375em) {
+  .contact__hero {
+    margin-top: 13vh;
+  }
+  .contact__hero__title h1 {
+    margin-bottom: 0rem;
+  }
+  .contact__hero__text {
+    display: none;
+  }
+  .contact__hero__img {
+    display: none;
+  }
+}
+
+.contact__form {
+  position: relative;
+}
+
+.contact__form .fixed-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__form__form__wrapper {
+  width: 100%;
+  margin-left: 5rem;
+}
+
+.contact__form__form__wrapper label {
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.contact__form__form__wrapper__grid {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.contact__form__form__wrapper__grid__unit label,
+.contact__form__form__wrapper__grid__unit input {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 64em) {
+  .contact__form {
+    padding-bottom: 5rem;
+  }
+  .contact__form__form__wrapper {
+    margin-top: -240px;
+  }
+  .contact__form__form__wrapper__mobile {
+    display: none;
+  }
+  .contact__form #map__mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 87.4375em) {
+  .contact__form .fixed-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__form__map__wrapper {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .contact__form__bg {
+    position: absolute;
+    background-color: #FCE8DE;
+    height: 700px;
+    width: 100vw;
+    top: 10px;
+    z-index: -5;
+  }
+  .contact__form__form__wrapper {
+    margin-left: 0;
+    padding: 3rem 0;
+    padding-bottom: 0;
+  }
+  .contact__form__form__wrapper form {
+    padding-bottom: 5rem;
+  }
+  .contact__form__form__wrapper hr {
+    width: 100px;
+    margin: 0.5rem 0;
+    padding: 0;
+    color: lightgrey;
+  }
+  .contact__form__form__wrapper__mobile {
+    color: lightgrey;
+    font-size: 16px;
+    line-height: 3.5ch;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    margin-bottom: 3rem;
+  }
+  .contact__form__form__wrapper__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contact__form__form__wrapper__grid input {
+    margin-bottom: 1rem;
+  }
+  .contact__form__map__wrapper iframe {
+    display: none;
+  }
+  .contact__form #map__mobile {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.activiteiten__nav {
+  background-color: white;
+}
+
+.activiteiten__nav button {
+  background-color: #e76623;
+}
+
+.activiteiten__nav button a {
+  color: white;
+}
+
+@media (max-width: 87.4375em) {
+  .activiteiten__nav {
+    background-color: white !important;
+  }
+}
+
+.activiteiten__hero {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 64em) {
+  .activiteiten__hero {
+    margin-top: 8vh;
+    height: 92vh;
+  }
+  .activiteiten__hero__bg {
+    position: absolute;
+    z-index: -5;
+    background-color: #FCE8DE;
+    width: 20%;
+    height: 100%;
+  }
+  .activiteiten__hero__title {
+    padding-top: 15%;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .activiteiten__hero__text {
+    margin-top: 1rem;
+    width: 35%;
+    font-weight: 300;
+  }
+  .activiteiten__hero__button {
+    margin-top: 2rem;
+  }
+  .activiteiten__hero__button button {
+    background-color: #e76623;
+    color: white;
+  }
+  .activiteiten__hero__compass {
+    bottom: -70px;
+    left: -30px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+  }
+  .activiteiten__hero__compass img {
+    width: 13rem;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .activiteiten__hero__img {
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    background-image: url("../img/activiteiten/cedric.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 87.4375em) {
+  .activiteiten__hero {
+    margin-top: 13vh;
+  }
+  .activiteiten__hero__title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .activiteiten__hero__text {
+    margin-bottom: 3rem;
+  }
+  .activiteiten__hero__compass {
+    display: none;
+  }
+  .activiteiten__hero__button {
+    display: none;
+  }
+  .activiteiten__hero__img {
+    width: 100%;
+    height: 250px;
+    background-image: url("../img/activiteiten/cedric.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.activiteiten__activiteiten {
+  position: relative;
+  background-color: #154b25;
+  padding: 5rem 0;
+  padding-bottom: 20rem;
+}
+
+.activiteiten__activiteiten .fixed-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5rem;
+  z-index: 10;
+}
+
+.activiteiten__activiteiten__unit {
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.activiteiten__activiteiten__unit__title {
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.activiteiten__activiteiten__unit__text {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.activiteiten__activiteiten__unit__img {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.activiteiten__activiteiten__unit .fietsen {
+  background-image: url("../img/activiteiten/fietsen.png");
+}
+
+.activiteiten__activiteiten__unit .paardrijden {
+  background-image: url("../img/activiteiten/paardrijden.png");
+}
+
+.activiteiten__activiteiten__unit .golfen {
+  background-image: url("../img/activiteiten/golf.jpg");
+}
+
+.activiteiten__activiteiten__unit .vissen {
+  background-image: url("../img/activiteiten/vissen.png");
+}
+
+.activiteiten__activiteiten__unit .zwemmen {
+  background-image: url("../img/activiteiten/zwemmen.png");
+}
+
+.activiteiten__activiteiten__unit .wandelen {
+  background-image: url("../img/activiteiten/wandelen.png");
+}
+
+.activiteiten__activiteiten__isolijnen img {
+  position: absolute;
+}
+
+.activiteiten__activiteiten__isolijnen #isolijnen1 {
+  z-index: 0;
+  width: 400px;
+  top: 100px;
+  left: -250px;
+}
+
+.activiteiten__activiteiten__isolijnen #isolijnen2 {
+  z-index: 0;
+  width: 500px;
+  bottom: -150px;
+  right: 20vw;
+}
+
+@media (max-width: 87.4375em) {
+  .activiteiten__activiteiten {
+    overflow: hidden;
+  }
+  .activiteiten__activiteiten .fixed-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .activiteiten__activiteiten__unit {
+    margin: auto;
+  }
+  .activiteiten__activiteiten__img {
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: url("../img/zwembad.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .activiteiten__activiteiten__isolijnen #isolijnen2 {
+    bottom: 400px;
+  }
+}
+
+.activiteiten__families {
+  position: relative;
+  background-color: #FCE8DE;
+}
+
+.activiteiten__families::before {
+  position: absolute;
+  content: "";
+  background-color: #FCE8DE;
+  width: 100vw;
+  height: 300px;
+  top: -300px;
+  z-index: -10;
+}
+
+.activiteiten__families .fixed-container {
+  position: relative;
+  padding: 0 15rem;
+  padding-bottom: 25rem;
+}
+
+.activiteiten__families__text {
+  line-height: 2.5ch;
+}
+
+.activiteiten__families__images img {
+  border-radius: 10px;
+}
+
+.activiteiten__families__images #brenne {
+  position: absolute;
+  top: -50px;
+  left: -100px;
+}
+
+.activiteiten__families__images #brenne img {
+  width: 300px;
+}
+
+.activiteiten__families__images #brenne::after {
+  content: "Parc naturel de la Brenne";
+  display: block;
+  font-size: 14px;
+}
+
+.activiteiten__families__images #sidiailles {
+  position: absolute;
+  top: 200px;
+  left: -70px;
+}
+
+.activiteiten__families__images #sidiailles img {
+  width: 250px;
+}
+
+.activiteiten__families__images #sidiailles::after {
+  content: "Sidiailles";
+  display: block;
+  font-size: 14px;
+}
+
+.activiteiten__families__images #chateauroux {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+}
+
+.activiteiten__families__images #chateauroux img {
+  width: 600px;
+}
+
+.activiteiten__families__images #chateauroux::after {
+  content: "Chateauroux";
+  display: block;
+  font-size: 14px;
+}
+
+.activiteiten__families__images #cher {
+  position: absolute;
+  right: 0px;
+  bottom: 150px;
+}
+
+.activiteiten__families__images #cher img {
+  width: 300px;
+}
+
+.activiteiten__families__images #cher::after {
+  content: "Cher streek";
+  display: block;
+  font-size: 14px;
+}
+
+.activiteiten__families__images #zoo {
+  position: absolute;
+  right: -80px;
+  top: -100px;
+}
+
+.activiteiten__families__images #zoo img {
+  width: 300px;
+}
+
+.activiteiten__families__images #zoo::after {
+  content: "Zoo Beauval";
+  display: block;
+  font-size: 14px;
+}
+
+@media (min-width: 64em) {
+  .activiteiten__families {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 87.4375em) {
+  .activiteiten__families__images {
+    display: none;
+  }
+  .activiteiten__families__title {
+    margin-top: 5rem;
+  }
+  .activiteiten__families .fixed-container {
+    padding: 0;
+    padding-bottom: 5rem;
+  }
+}
+
+.contact__nav {
+  background-color: white;
+}
+
+.contact__nav .nav__links button {
+  background-color: #e76623;
+}
+
+.contact__nav .nav__links button a {
+  color: white;
+}
+
+.contact__hero {
+  position: relative;
+}
+
+@media (min-width: 64em) {
+  .contact__hero {
+    margin-top: 30vh;
+    margin-bottom: 5rem;
+  }
+  .contact__hero__bg {
+    height: 1000px;
+    width: 50vw;
+    position: absolute;
+    background-color: #FCE8DE;
+    z-index: -5;
+    right: 0;
   }
   .contact__hero__img {
     position: absolute;

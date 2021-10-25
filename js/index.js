@@ -44,8 +44,13 @@ navSlide()
 // Splide Init
 const config = {
     type: "loop",
+<<<<<<< HEAD
     cover: true,
     heightRatio: 1.2,
+=======
+    // cover: true,
+    // heightRatio: 0.5,
+>>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
 }
 
 var elms = document.getElementsByClassName('splide');

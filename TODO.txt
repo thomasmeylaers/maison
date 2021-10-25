@@ -1,6 +1,19 @@
+<<<<<<< HEAD
 - Teksten invullen
 - Animaties
 - Form met https://formsubmit.co/
 - Verschillende talen
 - File data verkleinen
 - Foto's vervangen?
+=======
+- Splide voor accomodaties
+- Splide voor recensies op mobiel
+- Teksten invullen
+- Animaties
+- Form
+- Verschillende talen
+
+- Foto's vervangen?
+
+
+>>>>>>> c288d5d8fa1a7972b4f6cfc136b023598c64daca
