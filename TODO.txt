@@ -1,10 +1,9 @@
-- Splide voor accomodaties
-- Splide voor recensies op mobiel
+
 - Teksten invullen
 - Animaties
 - Form
 - Verschillende talen
-
+- File data verkleinen
 - Foto's vervangen?
 
 

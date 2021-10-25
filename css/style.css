@@ -906,7 +906,7 @@ a {
   .ontspan__img__wrapper {
     width: 40%;
     height: 80vh;
-    background-image: url("/img/Maison-Laventure_15.jpg");
+    background-image: url("../img/ontspan.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -973,28 +973,36 @@ a {
     transform: scale(0.7);
   }
   .activiteiten__img__fietsen {
-    top: -50px;
+    top: 0px;
+    border-radius: 40px;
     right: 300px;
+    width: 500px;
   }
   .activiteiten__img__petanque {
     top: 100px;
     right: -100px;
   }
   .activiteiten__img__zwemmen {
-    top: 480px;
-    right: 440px;
+    top: 380px;
+    right: 400px;
   }
   .activiteiten__img__wandelen {
-    top: 550px;
-    right: 150px;
+    top: 600px;
+    right: 0px;
+    width: 500px;
+    border-radius: 40px;
   }
   .activiteiten__img__paardrijden {
-    top: 350px;
-    right: 750px;
+    top: 400px;
+    right: 720px;
+    width: 400px;
+    border-radius: 40px;
   }
   .activiteiten__img__vissen {
-    top: 500px;
-    right: 1050px;
+    top: 600px;
+    right: 750px;
+    border-radius: 40px;
+    width: 500px;
   }
   .activiteiten__text__wrapper {
     width: 40%;
@@ -1298,7 +1306,7 @@ a {
     position: absolute;
     z-index: -5;
     background-color: #FCE8DE;
-    width: 20%;
+    width: 100%;
     height: 100%;
   }
   .accomodaties__hero__title {
@@ -1394,10 +1402,10 @@ a {
   }
   .accomodaties__kamers__unit .splide {
     overflow: hidden;
-    width: 400px;
-    max-height: 500px;
+    min-width: 400px;
+    border-radius: 50px;
   }
-  .accomodaties__kamers__unit .splide img {
+  .accomodaties__kamers__unit .splide__slide img {
     width: 100%;
     height: auto;
   }
@@ -1412,7 +1420,7 @@ a {
     border-radius: 50px;
   }
   .accomodaties__kamers__unit__image__ecrivain {
-    background-image: url("../img/ecrivain.jpg");
+    background-image: url("../../img/accomodaties/relax/relax_1.jpg");
   }
   .accomodaties__kamers__unit__image__nature {
     background-image: url("../img/nature.jpg");
@@ -1488,6 +1496,10 @@ a {
 @media (max-width: 87.4375em) {
   .accomodaties__kamers {
     padding-top: 1rem;
+  }
+  .accomodaties__kamers .splide {
+    overflow: hidden;
+    border-radius: 50px;
   }
   .accomodaties__kamers__unit {
     border-radius: 50px;
@@ -1713,12 +1725,21 @@ a {
   .accomodaties__ratings__unit:not(:last-child) {
     margin-right: 4rem;
   }
+  .accomodaties__ratings .splide {
+    display: none;
+  }
+  .accomodaties__ratings__mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 87.4375em) {
   .accomodaties__ratings {
     position: relative;
     padding: 5rem 0;
+  }
+  .accomodaties__ratings__desktop {
+    display: none;
   }
   .accomodaties__ratings .container {
     display: -webkit-box;
@@ -1733,10 +1754,7 @@ a {
     padding: 2rem;
     font-size: 14px;
     line-height: 2.5ch;
-  }
-  .accomodaties__ratings__unit:not(:last-child) {
-    margin-right: 4rem;
-    display: none;
+    margin-top: auto;
   }
 }
 
@@ -1772,7 +1790,7 @@ a {
     position: absolute;
     z-index: -5;
     background-color: #FCE8DE;
-    width: 20%;
+    width: 100%;
     height: 100%;
   }
   .activiteiten__hero__title {
@@ -1893,12 +1911,12 @@ a {
   background-image: url("../img/activiteiten/fietsen.png");
 }
 
-.activiteiten__activiteiten__unit .paardrijden {
-  background-image: url("../img/activiteiten/paardrijden.png");
+.activiteiten__activiteiten__unit .dieren {
+  background-image: url("../img/activiteiten/dieren.jpg");
 }
 
-.activiteiten__activiteiten__unit .golfen {
-  background-image: url("../img/activiteiten/golf.jpg");
+.activiteiten__activiteiten__unit .bar {
+  background-image: url("../img/activiteiten/bar.jpg");
 }
 
 .activiteiten__activiteiten__unit .vissen {

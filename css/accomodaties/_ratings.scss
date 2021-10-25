@@ -24,8 +24,17 @@
                 margin-right: 4rem;
             }
         }
+        .splide {
+            display: none;
+        }
+        &__mobile {
+            display: none;
+        }
     }
     @include breakpoint-down(large) {
+        &__desktop {
+            display: none;
+        }
         position: relative;
         padding: 5rem 0;
         .container {
@@ -39,10 +48,7 @@
             padding: 2rem;
             font-size: 14px;
             line-height: 2.5ch;
-            &:not(:last-child) {
-                margin-right: 4rem;
-                display: none;
-            }
+            margin-top: auto;
         }
     }
 }

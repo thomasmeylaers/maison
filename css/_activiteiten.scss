@@ -24,28 +24,36 @@
             -o-transform: scale(0.7);
             transform: scale(0.7);
             &__fietsen {
-                top: -50px;
+                top: 0px;
+                border-radius: 40px;
                 right: 300px;
+                width: 500px;
             }
             &__petanque {
                 top: 100px;
                 right: -100px;
             }
             &__zwemmen {
-                top: 480px;
-                right: 440px;
+                top: 380px;
+                right: 400px;
             }
             &__wandelen {
-                top: 550px;
-                right: 150px;
+                top: 600px;
+                right: 0px;
+                width: 500px;
+                border-radius: 40px;
             }
             &__paardrijden {
-                top: 350px;
-                right: 750px;
+                top: 400px;
+                right: 720px;
+                width: 400px;
+                border-radius: 40px;
             }
             &__vissen {
-                top: 500px;
-                right: 1050px;
+                top: 600px;
+                right: 750px;
+                border-radius: 40px;
+                width: 500px;
             }
         }
         &__text__wrapper {
