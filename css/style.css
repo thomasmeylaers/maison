@@ -398,12 +398,6 @@ a {
   .nav__lang li:not(:last-child) {
     margin-right: 0.5rem;
   }
-  .nav__lang li:first-child {
-    font-weight: bolder;
-  }
-  .nav__lang li:not(:first-child) {
-    font-weight: lighter;
-  }
   .nav__lang .nav__stripe {
     color: white;
   }
@@ -900,7 +894,7 @@ a {
   }
   .ontspan__left__wrapper {
     width: 50%;
-    margin-left: 5rem;
+    margin-left: 0rem;
     line-height: 2.5ch;
   }
   .ontspan__img__wrapper {
@@ -1006,7 +1000,7 @@ a {
   }
   .activiteiten__text__wrapper {
     width: 40%;
-    margin-left: 5rem;
+    margin-left: 0rem;
     line-height: 2.5ch;
   }
 }
@@ -1140,7 +1134,8 @@ a {
     height: 600px;
   }
   .contact__right__wrapper {
-    width: 45%;
+    padding-left: 3rem;
+    width: 60%;
   }
   .contact__right__wrapper .section__title {
     margin-bottom: 2rem;
