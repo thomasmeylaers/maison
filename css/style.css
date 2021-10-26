@@ -1341,7 +1341,7 @@ a {
     width: 50%;
     position: absolute;
     height: 100%;
-    background-image: url("../img/accomodaties/nature/accomodaties.jpg");
+    background-image: url("../img/accomodaties/nature/compressed/accomodaties.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1826,7 +1826,7 @@ a {
     width: 50%;
     position: absolute;
     height: 100%;
-    background-image: url("../img/activiteiten/cedric.jpg");
+    background-image: url("../img/activiteiten/compressed/cedric.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1856,7 +1856,7 @@ a {
   .activiteiten__hero__img {
     width: 100%;
     height: 250px;
-    background-image: url("../img/activiteiten/cedric.jpg");
+    background-image: url("../img/activiteiten/compressed/cedric.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1910,27 +1910,27 @@ a {
 }
 
 .activiteiten__activiteiten__unit .fietsen {
-  background-image: url("../img/activiteiten/fietsen.png");
+  background-image: url("../img/activiteiten/compressed/fietsen.jpg");
 }
 
 .activiteiten__activiteiten__unit .dieren {
-  background-image: url("../img/activiteiten/dieren.jpg");
+  background-image: url("../img/activiteiten/compressed/dieren.jpg");
 }
 
 .activiteiten__activiteiten__unit .bar {
-  background-image: url("../img/activiteiten/bar.jpg");
+  background-image: url("../img/activiteiten/compressed/bar.jpg");
 }
 
 .activiteiten__activiteiten__unit .vissen {
-  background-image: url("../img/activiteiten/fitness.jpg");
+  background-image: url("../img/activiteiten/compressed/fitness.jpg");
 }
 
 .activiteiten__activiteiten__unit .zwemmen {
-  background-image: url("../img/activiteiten/zwemmen.png");
+  background-image: url("../img/activiteiten/compressed/zwemmen.jpg");
 }
 
 .activiteiten__activiteiten__unit .wandelen {
-  background-image: url("../img/activiteiten/wandelen.png");
+  background-image: url("../img/activiteiten/compressed/wandelen.jpg");
 }
 
 .activiteiten__activiteiten__isolijnen img {
@@ -1968,7 +1968,7 @@ a {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-image: url("../img/zwembad.jpg");
+    background-image: url("../img/index/compressed/1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
