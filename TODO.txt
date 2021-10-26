@@ -3,4 +3,4 @@
 - Form met https://formsubmit.co/
 - Verschillende talen
 - File data verkleinen
-- Foto's vervangen?
+- SEO

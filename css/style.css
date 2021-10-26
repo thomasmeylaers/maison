@@ -1438,7 +1438,7 @@ a {
     background-image: url("../img/gite.jpg");
   }
   .accomodaties__kamers__unit__middle {
-    padding: 0rem 5rem;
+    padding: 0rem 4rem;
     padding-bottom: 2rem;
   }
   .accomodaties__kamers__unit__middle .middle__title h1 {
@@ -1447,8 +1447,8 @@ a {
     margin-top: 1rem;
   }
   .accomodaties__kamers__unit__middle .middle__text p {
-    font-size: 14px;
-    line-height: 2.5ch;
+    font-size: 12px;
+    font-weight: 200;
   }
   .accomodaties__kamers__unit__middle .middle__icons {
     display: -ms-grid;
@@ -1815,6 +1815,7 @@ a {
     left: -30px;
     position: absolute;
     margin: 0;
+    z-index: -1;
     padding: 0;
   }
   .activiteiten__hero__compass img {
@@ -1867,7 +1868,7 @@ a {
   position: relative;
   background-color: #154b25;
   padding: 5rem 0;
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
 }
 
 .activiteiten__activiteiten .fixed-container {
@@ -1896,6 +1897,8 @@ a {
 
 .activiteiten__activiteiten__unit__text {
   padding: 0 1rem 1rem 1rem;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .activiteiten__activiteiten__unit__img {
@@ -1920,7 +1923,7 @@ a {
 }
 
 .activiteiten__activiteiten__unit .vissen {
-  background-image: url("../img/activiteiten/vissen.png");
+  background-image: url("../img/activiteiten/fitness.jpg");
 }
 
 .activiteiten__activiteiten__unit .zwemmen {
