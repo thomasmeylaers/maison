@@ -49,6 +49,9 @@
         }
     }
     @include breakpoint-up(large) {
+        .contact__form {
+            padding-top: 17rem;
+        }
         &__isolijnen {
             position: absolute;
             scale: 1;

@@ -101,3 +101,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// Gsap animations
+gsap.registerPlugin(ScrollTrigger)
+
+// gsap.from(".fade_up", {
+//     scrollTrigger: ".fade_up", // start the animation when ".box" enters the viewport (once)
+//     duration: 0.8,
+//     y: "45px",
+//     ease: "ease-out",
+//     opacity: "0"
+//   });
+
+gsap.utils.toArray(".fade_up").forEach(element => {
+    gsap.from(element, {
+    scrollTrigger: element, // start the animation when ".box" enters the viewport (once)
+    duration: 0.5,
+    y: "35px",
+    ease: "ease-out",
+    opacity: "0"
+  })})

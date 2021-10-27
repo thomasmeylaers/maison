@@ -416,10 +416,8 @@ a {
     list-style: none;
   }
   .nav__links button {
-    background-color: #e76623;
-  }
-  .nav__links button a {
     color: white;
+    background-color: #e76623;
   }
   .nav .nav__link {
     color: white;
@@ -1109,6 +1107,9 @@ a {
 }
 
 @media (min-width: 64em) {
+  .contact .contact__form {
+    padding-top: 17rem;
+  }
   .contact__isolijnen {
     position: absolute;
     scale: 1;
@@ -1447,7 +1448,7 @@ a {
   }
   .accomodaties__kamers__unit__middle .middle__text p {
     font-size: 12px;
-    font-weight: 200;
+    font-weight: 300;
   }
   .accomodaties__kamers__unit__middle .middle__icons {
     display: -ms-grid;
@@ -1488,7 +1489,7 @@ a {
   }
   .accomodaties__kamers__unit__right .right__price__smaller {
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 300;
   }
 }
 
