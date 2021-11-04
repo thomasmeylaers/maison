@@ -15,7 +15,7 @@ const navSlide = () => {
 
                 link.style.animation = ''
             } else {
-                link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index/7 + 0.5}s`
+                link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index / 7 + 0.5}s`
             }
         })
 
@@ -55,32 +55,14 @@ for (var i = 0, len = elms.length; i < len; i++) {
 
 
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() { scrollFunction() };
-
-function scrollFunction() {
-    if (screen.width > '1024')
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("nav").style.backgroundColor = "white";
-            $('.nav__link').css({ 'color': 'black' });
-            $('.nav__stripe').css({ 'color': 'black' });
 
 
-        } else {
-            document.getElementById("nav").style.backgroundColor = "transparent";
-            $('.nav__link').css({ 'color': 'white' });
-            $('.nav__stripe').css({ 'color': 'white' });
-
-
-
-        }
-}
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
 
     if ("IntersectionObserver" in window) {
-        var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(video) {
+        var lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (video) {
                 if (video.isIntersecting) {
                     for (var source in video.target.children) {
                         var videoSource = video.target.children[source];
@@ -96,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 
-        lazyVideos.forEach(function(lazyVideo) {
+        lazyVideos.forEach(function (lazyVideo) {
             lazyVideoObserver.observe(lazyVideo);
         });
     }
@@ -113,11 +95,41 @@ gsap.registerPlugin(ScrollTrigger)
 //     opacity: "0"
 //   });
 
+gsap.to(".accomodaties__hero__img__overlay", {
+    duration: 1,
+    scaleX: 0,
+    transformOrigin:"100% 50%",
+    ease: "power2.out"
+})
+
 gsap.utils.toArray(".fade_up").forEach(element => {
     gsap.from(element, {
-    scrollTrigger: element, // start the animation when ".box" enters the viewport (once)
-    duration: 0.5,
-    y: "35px",
-    ease: "ease-out",
-    opacity: "0"
-  })})
+        scrollTrigger: element, // start the animation when ".box" enters the viewport (once)
+        duration: 0.5,
+        y: "35px",
+        ease: "ease-out",
+        opacity: "0"
+    })
+})
+
+gsap.utils.toArray(".slide_right").forEach(element => {
+    gsap.from(element, {
+        scrollTrigger: element, // start the animation when ".box" enters the viewport (once)
+        duration: 2,
+        scaleX: 0,
+        transformOrigin: "0 50%",
+        stagger: 3,
+        ease: "ease-in-out"
+    })
+})
+
+gsap.utils.toArray(".slide_left").forEach(element => {
+    gsap.from(element, {
+        scrollTrigger: element, // start the animation when ".box" enters the viewport (once)
+        duration: 1.5,
+        scaleX: 0,
+        transformOrigin: "100% 50%",
+
+        ease: "ease-in-out"
+    })
+})

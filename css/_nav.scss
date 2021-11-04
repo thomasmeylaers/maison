@@ -17,6 +17,10 @@
             margin: 5px;
         }
     }
+
+    #logo_groen {
+        display: none;
+    }
     @include breakpoint-up(large) {
         &__logo {
             >img {
@@ -61,7 +65,7 @@
         }
     }
     @include breakpoint-down(large) {
-        background-color: white;
+        background-color: transparent;
         &__logo {
             >img {
                 width: 8rem;

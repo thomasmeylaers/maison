@@ -376,6 +376,10 @@ a {
   margin: 5px;
 }
 
+.nav #logo_groen {
+  display: none;
+}
+
 @media (min-width: 64em) {
   .nav__logo > img {
     width: 10rem;
@@ -429,7 +433,7 @@ a {
 
 @media (max-width: 87.4375em) {
   .nav {
-    background-color: white;
+    background-color: transparent;
   }
   .nav__logo > img {
     width: 8rem;
@@ -553,7 +557,7 @@ a {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.7;
   z-index: -1;
 }
 
@@ -597,6 +601,13 @@ a {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero video {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+}
+
 .over {
   position: relative;
 }
@@ -632,12 +643,14 @@ a {
   .over .fixed-container {
     padding-left: calc((100vw - 1173px)/2);
     padding-right: 3rem;
+    margin: 0;
+    width: 60%;
   }
   .over__img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
+    max-width: 50%;
   }
   .over__img img {
     width: 28rem;
@@ -657,9 +670,9 @@ a {
     position: absolute;
     background-color: #FCE8DE;
     width: 100vw;
-    height: 40vh;
+    height: 551px;
     z-index: -50;
-    top: 42%;
+    top: 109px;
   }
 }
 
@@ -901,8 +914,8 @@ a {
   }
   .ontspan__img__wrapper {
     width: 40%;
-    height: 80vh;
-    background-image: url("../img/index/compressed/ontspan.jpg");
+    height: 800px;
+    background-image: url("../img/index/ontspan.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -962,6 +975,9 @@ a {
   .activiteiten .isolijnen__2 {
     bottom: -221px;
     left: -200px;
+  }
+  .activiteiten button {
+    margin-top: 4rem;
   }
   .activiteiten__img {
     position: absolute;
@@ -1349,6 +1365,14 @@ a {
     right: 0;
     top: 0;
   }
+  .accomodaties__hero__img__overlay {
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    background-color: #FCE8DE;
+    right: 0;
+    top: 0;
+  }
 }
 
 @media (max-width: 87.4375em) {
@@ -1386,6 +1410,11 @@ a {
 
 .accomodaties__kamers .crib {
   width: 35px;
+}
+
+.accomodaties__kamers .nature_disclosure {
+  font-weight: 200;
+  padding: 0 2rem;
 }
 
 @media (min-width: 64em) {
@@ -1438,7 +1467,7 @@ a {
     background-image: url("../img/gite.jpg");
   }
   .accomodaties__kamers__unit__middle {
-    padding: 0rem 4rem;
+    padding: 0rem 3rem;
     padding-bottom: 2rem;
   }
   .accomodaties__kamers__unit__middle .middle__title h1 {
@@ -1447,8 +1476,8 @@ a {
     margin-top: 1rem;
   }
   .accomodaties__kamers__unit__middle .middle__text p {
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
   }
   .accomodaties__kamers__unit__middle .middle__icons {
     display: -ms-grid;
@@ -1488,7 +1517,7 @@ a {
     margin-bottom: 2rem;
   }
   .accomodaties__kamers__unit__right .right__price__smaller {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
   }
 }
@@ -1699,6 +1728,13 @@ a {
   width: 600px;
   top: -100px;
   left: -200px;
+}
+
+.accomodaties__ratings__title h1 {
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 64em) {
@@ -2166,6 +2202,10 @@ a {
     padding-top: 0.5rem;
     margin-bottom: 3rem;
   }
+  .contact__hero__text p {
+    font-weight: 300;
+    color: black;
+  }
 }
 
 @media (max-width: 87.4375em) {
@@ -2234,6 +2274,12 @@ a {
   .contact__form__form__wrapper__mobile {
     display: none;
   }
+  .contact__form__img__mobile {
+    display: none;
+  }
+  .contact__form__img img {
+    width: 550px;
+  }
   .contact__form #map__mobile {
     display: none;
   }
@@ -2246,6 +2292,16 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contact__form__img {
+    display: none;
+  }
+  .contact__form__img__mobile {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .contact__form__img__mobile img {
+    width: 100%;
+  }
   .contact__form__map__wrapper {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -2254,14 +2310,14 @@ a {
   .contact__form__bg {
     position: absolute;
     background-color: #FCE8DE;
-    height: 700px;
+    height: 900px;
     width: 100vw;
-    top: 10px;
+    top: 50px;
     z-index: -5;
   }
   .contact__form__form__wrapper {
     margin-left: 0;
-    padding: 3rem 0;
+    padding: 0rem 0;
     padding-bottom: 0;
   }
   .contact__form__form__wrapper form {
@@ -2274,7 +2330,7 @@ a {
     color: lightgrey;
   }
   .contact__form__form__wrapper__mobile {
-    color: lightgrey;
+    color: black;
     font-size: 16px;
     line-height: 3.5ch;
     font-weight: 300;

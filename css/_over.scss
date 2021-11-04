@@ -25,10 +25,12 @@
         .fixed-container {
             padding-left: calc((100vw - 1173px)/2);
             padding-right: 3rem;
+            margin:0;
+            width: 60%;
         }
         &__img {
             display: flex;
-            width: 50%;
+            max-width: 50%;
             img {
                 width: 28rem;
                 height: 23rem;
@@ -44,9 +46,9 @@
             position: absolute;
             background-color: $lightOrange;
             width: 100vw;
-            height: 40vh;
+            height: 551px;
             z-index: -50;
-            top: 42%;
+            top: 109px;
         }
     }
     @include breakpoint-down(large) {

@@ -4,6 +4,10 @@
     .crib {
         width: 35px;
     }
+    .nature_disclosure {
+        font-weight: 200;
+        padding: 0 2rem;
+    }
     @include breakpoint-up(large) {
         &__unit {
             .splide {
@@ -51,7 +55,7 @@
                 }
             }
             &__middle {
-                padding: 0rem 4rem;
+                padding: 0rem 3rem;
                 padding-bottom: 2rem;
                 .middle__title {
                     h1 {
@@ -62,8 +66,8 @@
                 }
                 .middle__text {
                     p {
-                        font-size: 12px;
-                        font-weight: 300;
+                        font-size: 14px;
+                        font-weight: 400;
                         // line-height: 2.5ch;
                     }
                 }
@@ -94,7 +98,7 @@
                 }
                 .right__price {
                     &__smaller {
-                        font-size: 14px;
+                        font-size: 12px;
                         font-weight: 300;
                     }
                 }

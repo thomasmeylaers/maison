@@ -7,6 +7,14 @@
         top: -100px;
         left: -200px;
     }
+    &__title {
+        h1 {
+            font-size: 50px;
+            color: white;
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+    }
     @include breakpoint-up(large) {
         position: relative;
         padding: 5rem 0;
