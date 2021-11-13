@@ -381,7 +381,7 @@ a {
 }
 
 @media (min-width: 64em) {
-  .nav__logo > img {
+  .nav__logo img {
     width: 10rem;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -435,7 +435,7 @@ a {
   .nav {
     background-color: transparent;
   }
-  .nav__logo > img {
+  .nav__logo img {
     width: 8rem;
   }
   .nav__lang {
@@ -579,13 +579,7 @@ a {
   position: absolute;
 }
 
-@media (min-width: 64em) {
-  .hero video {
-    width: 100%;
-  }
-}
-
-@media (max-width: 87.4375em) {
+@media (max-width: 63.9375em) {
   .hero video {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
@@ -601,7 +595,13 @@ a {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1501px) {
+  .hero video {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
   .hero video {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
@@ -641,8 +641,7 @@ a {
     color: white;
   }
   .over .fixed-container {
-    padding-left: calc((100vw - 1173px)/2);
-    padding-right: 3rem;
+    padding-left: calc((100vw - 1173px) / 2);
     margin: 0;
     width: 60%;
   }
@@ -677,6 +676,12 @@ a {
 }
 
 @media (max-width: 87.4375em) {
+  .over .fixed-container {
+    padding-left: calc((100vw - 920px) / 2);
+  }
+}
+
+@media (max-width: 63.9375em) {
   .over {
     background-color: #FCE8DE;
     padding-top: 4rem;
@@ -936,6 +941,20 @@ a {
 }
 
 @media (max-width: 87.4375em) {
+  .ontspan__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ontspan__left__wrapper {
+    margin: auto;
+  }
   .ontspan__img__wrapper {
     display: none;
   }
@@ -961,7 +980,7 @@ a {
   position: relative;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 87.5em) {
   .activiteiten {
     height: 900px;
   }
@@ -1043,9 +1062,21 @@ a {
   .activiteiten__img {
     display: none;
   }
+  .activiteiten .fixed-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .activiteiten__text__wrapper {
     margin-top: 3rem;
     line-height: 2ch;
+    margin: auto;
   }
   .activiteiten__text__wrapper button {
     margin-top: 2rem;
@@ -1166,7 +1197,7 @@ a {
   }
 }
 
-@media (max-width: 87.4375em) {
+@media (max-width: 63.9375em) {
   .contact {
     overflow: hidden;
     padding-bottom: 5rem;
@@ -1358,7 +1389,7 @@ a {
     width: 50%;
     position: absolute;
     height: 100%;
-    background-image: url("../img/accomodaties/nature/compressed/accomodaties.jpg");
+    background-image: url("../img/accomodaties/hero.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1751,6 +1782,10 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .accomodaties__ratings__desktop {
+    position: relative;
+    z-index: 10;
+  }
   .accomodaties__ratings__unit {
     background-color: white;
     border-radius: 50px;
@@ -1863,7 +1898,7 @@ a {
     width: 50%;
     position: absolute;
     height: 100%;
-    background-image: url("../img/activiteiten/compressed/cedric.jpg");
+    background-image: url("../img/activiteiten/cedric.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1951,11 +1986,11 @@ a {
 }
 
 .activiteiten__activiteiten__unit .dieren {
-  background-image: url("../img/activiteiten/compressed/dieren.jpg");
+  background-image: url("../img/activiteiten/dieren_2.jpg");
 }
 
 .activiteiten__activiteiten__unit .bar {
-  background-image: url("../img/activiteiten/compressed/bar.jpg");
+  background-image: url("../img/activiteiten/bar_2.jpg");
 }
 
 .activiteiten__activiteiten__unit .vissen {
@@ -1991,6 +2026,7 @@ a {
 @media (max-width: 87.4375em) {
   .activiteiten__activiteiten {
     overflow: hidden;
+    padding-bottom: 20rem;
   }
   .activiteiten__activiteiten .fixed-container {
     -ms-grid-columns: 1fr;
@@ -2128,6 +2164,9 @@ a {
   .activiteiten__families {
     margin-top: 10rem;
   }
+  .activiteiten__families__text__mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 87.4375em) {
@@ -2136,6 +2175,13 @@ a {
   }
   .activiteiten__families__title {
     margin-top: 5rem;
+  }
+  .activiteiten__families__text__mobile h4 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .activiteiten__families__text__mobile a {
+    text-decoration: underline;
   }
   .activiteiten__families .fixed-container {
     padding: 0;

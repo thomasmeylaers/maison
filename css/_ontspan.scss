@@ -55,6 +55,14 @@
     }
   }
   @include breakpoint-down(large) {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__left__wrapper {
+      margin: auto;
+    }
     &__img__wrapper {
       display: none;
     }

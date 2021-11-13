@@ -1,143 +1,142 @@
 .nav {
-    position: fixed;
-    z-index: 100;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    transition: all 0.3s ease;
-    // background-color: white;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  transition: all 0.3s ease;
+  // background-color: white;
+  &__burger {
+    cursor: pointer;
+    .cunt {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 5px;
+    }
+  }
+
+  #logo_groen {
+    display: none;
+  }
+  @include breakpoint-up(large) {
+    &__logo {
+      img {
+        width: 10rem;
+        transition: all 0.3s ease;
+      }
+    }
+    &__lang {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        list-style: none;
+        &:not(:last-child) {
+          margin-right: 0.5rem;
+        }
+      }
+      .nav__stripe {
+        color: white;
+      }
+    }
+    &__links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 40%;
+      li {
+        list-style: none;
+      }
+      button {
+        color: white;
+
+        background-color: $darkOrange;
+      }
+    }
+    .nav__link {
+      color: white;
+    }
     &__burger {
-        cursor: pointer;
-        .cunt {
-            width: 25px;
-            height: 3px;
-            background-color: black;
-            margin: 5px;
-        }
+      display: none;
     }
-
-    #logo_groen {
-        display: none;
+  }
+  @include breakpoint-down(large) {
+    background-color: transparent;
+    &__logo {
+      img {
+        width: 8rem;
+      }
     }
-    @include breakpoint-up(large) {
-        &__logo {
-            >img {
-                width: 10rem;
-                transition: all 0.3s ease;
-            }
+    &__lang {
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      li {
+        list-style: none;
+        &:not(:last-child) {
+          margin-right: 0.5rem;
         }
-        &__lang {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            li {
-                list-style: none;
-                &:not(:last-child) {
-                    margin-right: 0.5rem;
-                }
-            }
-            .nav__stripe {
-                color: white;
-            }
+        &:first-child {
+          font-weight: bolder;
         }
-        &__links {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 40%;
-            li {
-                list-style: none;
-            }
-            button {
-                color: white;
-
-                background-color: $darkOrange;
-      
-            }
+        &:not(:first-child) {
+          font-weight: lighter;
         }
-        .nav__link {
-            color: white;
-        }
-        &__burger {
-            display: none;
-        }
+      }
     }
-    @include breakpoint-down(large) {
-        background-color: transparent;
-        &__logo {
-            >img {
-                width: 8rem;
-            }
-        }
-        &__lang {
-            padding-left: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 14px;
-            li {
-                list-style: none;
-                &:not(:last-child) {
-                    margin-right: 0.5rem;
-                }
-                &:first-child {
-                    font-weight: bolder;
-                }
-                &:not(:first-child) {
-                    font-weight: lighter;
-                }
-            }
-        }
-        &__links {
-            margin-top: 0;
-            position: absolute;
-            right: 0px;
-            height: 92vh;
-            /* Fallback for browsers that do not support Custom Properties */
-            height: calc(var(--vh, 1vh) * 92);
-            top: 8vh;
-            background-color: $lightOrange;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            width: 100vw;
-            transform: translateX(100%);
-            padding-left: 0;
-            li {
-                list-style: none;
-                opacity: 0;
-            }
-            transition: transform 0.5s ease-in;
-        }
-        &__burger {
-            background-color: $darkOrange;
-            border-radius: 50%;
-            height: 50px;
-            width: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .cunt {
-                background-color: white;
-                transition: all 0.3s ease;
-            }
-            &__toggle {
-                .nav__burger__line1 {
-                    transform: rotate(-45deg) translate(-5px, 6px);
-                }
-                .nav__burger__line2 {
-                    opacity: 0;
-                }
-                .nav__burger__line3 {
-                    transform: rotate(45deg) translate(-5px, -6px);
-                }
-            }
-        }
+    &__links {
+      margin-top: 0;
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      /* Fallback for browsers that do not support Custom Properties */
+      height: calc(var(--vh, 1vh) * 92);
+      top: 8vh;
+      background-color: $lightOrange;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 100vw;
+      transform: translateX(100%);
+      padding-left: 0;
+      li {
+        list-style: none;
+        opacity: 0;
+      }
+      transition: transform 0.5s ease-in;
     }
-    &__active {
-        transform: translateX(0%);
+    &__burger {
+      background-color: $darkOrange;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .cunt {
+        background-color: white;
+        transition: all 0.3s ease;
+      }
+      &__toggle {
+        .nav__burger__line1 {
+          transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .nav__burger__line2 {
+          opacity: 0;
+        }
+        .nav__burger__line3 {
+          transform: rotate(45deg) translate(-5px, -6px);
+        }
+      }
     }
+  }
+  &__active {
+    transform: translateX(0%);
+  }
 }
