@@ -26,6 +26,22 @@ const navSlide = () => {
 
 
 }
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (screen.width > '1024') {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("nav").style.backgroundColor = "white";
+            $('.nav__link').css({ 'color': 'black' });
+            $('.nav__stripe').css({ 'color': 'black' });
+
+        } else {
+            document.getElementById("nav").style.backgroundColor = "transparent";
+            $('.nav__link').css({ 'color': 'white' });
+            $('.nav__stripe').css({ 'color': 'white' });
+
+        }
+    }
+}
 
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -98,7 +114,7 @@ gsap.registerPlugin(ScrollTrigger)
 gsap.to(".accomodaties__hero__img__overlay", {
     duration: 1,
     scaleX: 0,
-    transformOrigin:"100% 50%",
+    transformOrigin: "100% 50%",
     ease: "power2.out"
 })
 
