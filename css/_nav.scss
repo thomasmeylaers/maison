@@ -21,6 +21,9 @@
   #logo_groen {
     display: none;
   }
+  #logo_wit {
+    width: 20rem;
+  }
   @include breakpoint-up(large) {
     &__logo {
       img {

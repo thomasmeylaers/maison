@@ -1,6 +1,2 @@
-- Teksten invullen
-- Animaties
-- Form met https://formsubmit.co/
-- Verschillende talen
-- File data verkleinen
-- SEO
+- Foto's kamers
+- Feedback mail
