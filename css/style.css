@@ -602,9 +602,12 @@ a {
 }
 
 @media (max-width: 63.9375em) {
+  .hero {
+    height: calc(var(--vh, 1vh) * 100);
+  }
   .hero video {
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    max-height: calc(var(--vh, 1vh) * 100);
   }
   .hero__title {
     font-size: 24px;
@@ -734,7 +737,9 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    /* safari may need this */
   }
 }
 

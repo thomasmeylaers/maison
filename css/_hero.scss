@@ -39,9 +39,11 @@
     }
   }
   @include breakpoint-down(medium) {
+    height: calc(var(--vh, 1vh) * 100);
+
     video {
       height: 100vh;
-      height: calc(var(--vh, 1vh) * 100);
+      max-height: calc(var(--vh, 1vh) * 100);
     }
     &__title {
       font-size: 24px;
