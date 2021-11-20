@@ -1,11 +1,27 @@
 .youtube {
-  .fixed-container {
-    iframe {
-      margin-top: 3rem;
-      margin-left: 50%;
-      transform: translateX(-50%);
-      height: 500px;
-      width: calc(1.788888 * 500px);
+  @include breakpoint-up(large) {
+    .fixed-container {
+      iframe {
+        margin-top: 3rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        height: 500px;
+        width: calc(1.788888 * 500px);
+      }
+    }
+  }
+  @include breakpoint-down(medium) {
+    .fixed-container {
+      .section__title {
+        margin-top: 3rem;
+      }
+      iframe {
+        margin-top: 0rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        height: 300px;
+        width: 100%;
+      }
     }
   }
 }

@@ -21,14 +21,16 @@
   #logo_groen {
     display: none;
   }
-  #logo_wit {
-    width: 20rem;
+
+  .index__lang {
+    color: white;
   }
+
   @include breakpoint-up(large) {
     &__logo {
       img {
         width: 10rem;
-        transition: all 0.3s ease;
+        transition: all 1s ease;
       }
     }
     &__lang {
@@ -65,8 +67,15 @@
     &__burger {
       display: none;
     }
+    #logo_wit {
+      width: 20rem;
+    }
   }
+
   @include breakpoint-down(large) {
+    #logo_wit {
+      width: 8rem;
+    }
     background-color: transparent;
     &__logo {
       img {

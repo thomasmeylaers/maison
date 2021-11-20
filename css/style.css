@@ -309,6 +309,12 @@ a {
   .section__title h1 {
     font-size: 1.6rem;
     display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -386,15 +392,15 @@ a {
   display: none;
 }
 
-.nav #logo_wit {
-  width: 20rem;
+.nav .index__lang {
+  color: white;
 }
 
 @media (min-width: 64em) {
   .nav__logo img {
     width: 10rem;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
   }
   .nav__lang {
     display: -webkit-box;
@@ -439,11 +445,17 @@ a {
   .nav__burger {
     display: none;
   }
+  .nav #logo_wit {
+    width: 20rem;
+  }
 }
 
 @media (max-width: 87.4375em) {
   .nav {
     background-color: transparent;
+  }
+  .nav #logo_wit {
+    width: 8rem;
   }
   .nav__logo img {
     width: 8rem;
@@ -718,7 +730,7 @@ a {
     width: 100%;
     height: 30vh;
     height: calc(var(--vh, 1vh) * 30);
-    background-image: url("../img/index/compressed/1.jpg");
+    background-image: url("../img/index/1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -982,13 +994,29 @@ a {
   }
 }
 
-.youtube .fixed-container iframe {
-  margin-top: 3rem;
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 500px;
-  width: calc(1.788888 * 500px);
+@media (min-width: 64em) {
+  .youtube .fixed-container iframe {
+    margin-top: 3rem;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 500px;
+    width: calc(1.788888 * 500px);
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .youtube .fixed-container .section__title {
+    margin-top: 3rem;
+  }
+  .youtube .fixed-container iframe {
+    margin-top: 0rem;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 300px;
+    width: 100%;
+  }
 }
 
 .activiteiten {
