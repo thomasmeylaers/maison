@@ -51,10 +51,10 @@
     #chateauroux {
       position: absolute;
       img {
-        width: 600px;
+        width: 300px;
       }
       bottom: 100px;
-      left: 100px;
+      left: -50px;
       &::after {
         content: "Chateauroux";
         display: block;
@@ -64,9 +64,9 @@
     #cher {
       position: absolute;
       img {
-        width: 300px;
+        width: 250px;
       }
-      right: 0px;
+      right: -80px;
       bottom: 150px;
       &::after {
         content: "Cher streek";
@@ -81,6 +81,45 @@
       }
       right: -80px;
       top: -100px;
+      &::after {
+        content: "Zoo Beauval";
+        display: block;
+        font-size: 14px;
+      }
+    }
+    #bourges {
+      position: absolute;
+      img {
+        width: 220px;
+      }
+      right: -80px;
+      top: 150px;
+      &::after {
+        content: "Bourges";
+        display: block;
+        font-size: 14px;
+      }
+    }
+    #meillant {
+      position: absolute;
+      img {
+        width: 250px;
+      }
+      left: 300px;
+      bottom: 60px;
+      &::after {
+        content: "Chateau Meillant";
+        display: block;
+        font-size: 14px;
+      }
+    }
+    #noirlac {
+      position: absolute;
+      img {
+        width: 250px;
+      }
+      right: 280px;
+      bottom: 80px;
       &::after {
         content: "Zoo Beauval";
         display: block;

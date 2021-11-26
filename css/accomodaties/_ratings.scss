@@ -15,6 +15,16 @@
       margin-bottom: 1rem;
     }
   }
+  &__unit {
+    position: relative;
+    &__name {
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+      font-weight: bold;
+      text-align: right;
+    }
+  }
   @include breakpoint-up(large) {
     position: relative;
     padding: 5rem 0;
@@ -32,8 +42,9 @@
       padding: 2rem;
       font-size: 14px;
       line-height: 2.5ch;
+      max-width: 30%;
       &:not(:last-child) {
-        margin-right: 4rem;
+        margin-right: 2rem;
       }
     }
     .splide {
@@ -61,6 +72,18 @@
       font-size: 14px;
       line-height: 2.5ch;
       margin-top: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      &__name {
+        font-family: "Pacifico";
+        font-size: 16px;
+      }
+    }
+    li {
+      position: relative;
+    }
+    .splide__arrows {
+      display: none;
     }
   }
 }

@@ -759,6 +759,10 @@ a {
   background-image: url("../img/accomodaties/aventure/compressed/aventure_3.jpg");
 }
 
+.kamers .card__mask__5 {
+  background-image: url("../img/accomodaties/soleil/compressed/soleil_1.jpg");
+}
+
 @media (min-width: 64em) {
   .kamers__text__wrapper {
     width: 40%;
@@ -770,17 +774,16 @@ a {
     margin-top: 2rem;
   }
   .kamers__cards__wrapper {
+    margin-top: 5rem;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
   }
   .kamers__card {
-    margin-top: 5rem;
-    width: 23%;
+    width: 100%;
     border-radius: 52px;
     -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
@@ -1496,8 +1499,12 @@ a {
 }
 
 .accomodaties__kamers .nature_disclosure {
-  font-weight: 200;
+  font-weight: 400;
   padding: 0 2rem;
+}
+
+.accomodaties__kamers .middle__icons__text img {
+  width: 30px;
 }
 
 @media (min-width: 64em) {
@@ -1550,8 +1557,8 @@ a {
     background-image: url("../img/gite.jpg");
   }
   .accomodaties__kamers__unit__middle {
-    padding: 0rem 3rem;
-    padding-bottom: 2rem;
+    padding: 0rem 2rem;
+    padding-bottom: 1rem;
   }
   .accomodaties__kamers__unit__middle .middle__title h1 {
     line-height: 2ch;
@@ -1560,7 +1567,7 @@ a {
     margin-top: 1rem;
   }
   .accomodaties__kamers__unit__middle .middle__text p {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
   }
   .accomodaties__kamers__unit__middle .middle__icons {
@@ -1825,6 +1832,18 @@ a {
   margin-bottom: 1rem;
 }
 
+.accomodaties__ratings__unit {
+  position: relative;
+}
+
+.accomodaties__ratings__unit__name {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+
 @media (min-width: 64em) {
   .accomodaties__ratings {
     position: relative;
@@ -1849,9 +1868,10 @@ a {
     padding: 2rem;
     font-size: 14px;
     line-height: 2.5ch;
+    max-width: 30%;
   }
   .accomodaties__ratings__unit:not(:last-child) {
-    margin-right: 4rem;
+    margin-right: 2rem;
   }
   .accomodaties__ratings .splide {
     display: none;
@@ -1883,6 +1903,19 @@ a {
     font-size: 14px;
     line-height: 2.5ch;
     margin-top: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .accomodaties__ratings__unit__name {
+    font-family: "Pacifico";
+    font-size: 16px;
+  }
+  .accomodaties__ratings li {
+    position: relative;
+  }
+  .accomodaties__ratings .splide__arrows {
+    display: none;
   }
 }
 
@@ -2172,11 +2205,11 @@ a {
 .activiteiten__families__images #chateauroux {
   position: absolute;
   bottom: 100px;
-  left: 100px;
+  left: -50px;
 }
 
 .activiteiten__families__images #chateauroux img {
-  width: 600px;
+  width: 300px;
 }
 
 .activiteiten__families__images #chateauroux::after {
@@ -2187,12 +2220,12 @@ a {
 
 .activiteiten__families__images #cher {
   position: absolute;
-  right: 0px;
+  right: -80px;
   bottom: 150px;
 }
 
 .activiteiten__families__images #cher img {
-  width: 300px;
+  width: 250px;
 }
 
 .activiteiten__families__images #cher::after {
@@ -2212,6 +2245,54 @@ a {
 }
 
 .activiteiten__families__images #zoo::after {
+  content: "Zoo Beauval";
+  display: block;
+  font-size: 14px;
+}
+
+.activiteiten__families__images #bourges {
+  position: absolute;
+  right: -80px;
+  top: 150px;
+}
+
+.activiteiten__families__images #bourges img {
+  width: 220px;
+}
+
+.activiteiten__families__images #bourges::after {
+  content: "Bourges";
+  display: block;
+  font-size: 14px;
+}
+
+.activiteiten__families__images #meillant {
+  position: absolute;
+  left: 300px;
+  bottom: 60px;
+}
+
+.activiteiten__families__images #meillant img {
+  width: 250px;
+}
+
+.activiteiten__families__images #meillant::after {
+  content: "Chateau Meillant";
+  display: block;
+  font-size: 14px;
+}
+
+.activiteiten__families__images #noirlac {
+  position: absolute;
+  right: 280px;
+  bottom: 80px;
+}
+
+.activiteiten__families__images #noirlac img {
+  width: 250px;
+}
+
+.activiteiten__families__images #noirlac::after {
   content: "Zoo Beauval";
   display: block;
   font-size: 14px;
