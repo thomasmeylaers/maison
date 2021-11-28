@@ -39,39 +39,39 @@ $(window).on('load', function () {
 
 
     }
-    window.onscroll = function () { scrollFunction() };
-    function scrollFunction() {
-        if (screen.width > '1024') {
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                document.getElementById("nav").style.backgroundColor = "white";
-                $('.nav__link').css({ 'color': 'black' });
-                $('.nav__stripe').css({ 'color': 'black' });
-                $('#logo_wit').css({ 'display': 'none' })
-                $('#logo_groen').css({ 'display': 'block' })
-            } else {
-                document.getElementById("nav").style.backgroundColor = "transparent";
-                $('.nav__link').css({ 'color': 'white' });
-                $('.nav__stripe').css({ 'color': 'white' });
-                $('#logo_wit').css({ 'display': 'block' })
-                $('#logo_groen').css({ 'display': 'none' })
-            }
-        } else {
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                document.getElementById("nav").style.backgroundColor = "white";
-                $('.nav__link').css({ 'color': 'black' });
-                $('.nav__stripe').css({ 'color': 'black' });
-                $('#logo_wit').css({ 'display': 'none' })
-                $('#logo_groen').css({ 'display': 'block' })
-            } else {
-                document.getElementById("nav").style.backgroundColor = "transparent";
-                $('.nav__link').css({ 'color': 'white' });
-                $('.page__link').css({ 'color': 'black' });
-                $('.nav__stripe').css({ 'color': 'white' });
-                $('#logo_wit').css({ 'display': 'block' })
-                $('#logo_groen').css({ 'display': 'none' })
-            }
-        }
-    }
+    // window.onscroll = function () { scrollFunction() };
+    // function scrollFunction() {
+    //     if (screen.width > '1024') {
+    //         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    //             document.getElementById("nav").style.backgroundColor = "white";
+    //             $('.nav__link').css({ 'color': 'black' });
+    //             $('.nav__stripe').css({ 'color': 'black' });
+    //             $('#logo_wit').css({ 'display': 'none' })
+    //             $('#logo_groen').css({ 'display': 'block' })
+    //         } else {
+    //             document.getElementById("nav").style.backgroundColor = "transparent";
+    //             $('.nav__link').css({ 'color': 'white' });
+    //             $('.nav__stripe').css({ 'color': 'white' });
+    //             $('#logo_wit').css({ 'display': 'block' })
+    //             $('#logo_groen').css({ 'display': 'none' })
+    //         }
+    //     } else {
+    //         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    //             document.getElementById("nav").style.backgroundColor = "white";
+    //             $('.nav__link').css({ 'color': 'black' });
+    //             $('.nav__stripe').css({ 'color': 'black' });
+    //             $('#logo_wit').css({ 'display': 'none' })
+    //             $('#logo_groen').css({ 'display': 'block' })
+    //         } else {
+    //             document.getElementById("nav").style.backgroundColor = "transparent";
+    //             $('.nav__link').css({ 'color': 'white' });
+    //             $('.page__link').css({ 'color': 'black' });
+    //             $('.nav__stripe').css({ 'color': 'white' });
+    //             $('#logo_wit').css({ 'display': 'block' })
+    //             $('#logo_groen').css({ 'display': 'none' })
+    //         }
+    //     }
+    // }
 
 
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -140,11 +140,15 @@ $(window).on('load', function () {
 
     gsap.utils.toArray(".fade_up").forEach(element => {
         gsap.from(element, {
-            scrollTrigger: element, // start the animation when ".box" enters the viewport (once)
+            // scrollTrigger: element, // start the animation when ".box" enters the viewport (once)
             duration: 0.5,
             y: "35px",
             ease: "ease-out",
-            opacity: "0"
+            opacity: "0",
+            scrollTrigger: {
+                trigger: element,
+                markers: { startColor: "green", endColor: "red", fontSize: "12px" }
+            }
         })
     })
 

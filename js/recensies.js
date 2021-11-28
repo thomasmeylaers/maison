@@ -68,5 +68,22 @@ for (let i = 0; i < 4; i++) {
     }
 }
 
+const fadeUp = document.querySelectorAll('.fade-up')
+const container = document.querySelector('#fixed-container')
+fadeUp.forEach((element, i) => {
+    // console.log(element.getBoundingClientRect().y)
+    console.log(i);
+    gsap.from(element, {
+        duration: 0.5,
+        y: "35px",
+        ease: "ease-out",
+        opacity: "0",
+        scrollTrigger: {
+            trigger: element,
+            // markers: { startColor: "green", endColor: "red", fontSize: "12px" },
+            start: 100 + window.innerWidth < 800 ? 1300 * i : 550 * i
+        }
+    })
+});
 
-
+// window.onscroll = function () { console.log(container.getBoundingClientRect().y, container.getBoundingClientRect().height, window.scrollY) };
