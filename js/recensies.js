@@ -35,6 +35,8 @@ const recensies = [
     }
 ]
 
+let usedIndices = []
+
 let textSelector = $('#text-selector')
 let nameSelector = $('#name-selector')
 let textSelectorMobile = $('#text-selector-mobile')
@@ -51,6 +53,20 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
+for (let i = 0; i < 4; i++) {
+    let completed = false
+    while (!completed) {
+        const randomNum = getRandomInt(8)
+        if (!usedIndices.includes(randomNum)) {
+            $(".text-selector").eq(i).text(recensies[randomNum].text)
+            $(".name-selector").eq(i).text("-" + recensies[randomNum].name)
+            $(".text-selector-mobile").eq(i).html(recensies[randomNum].text)
+            $(".name-selector-mobile").eq(i).html("-" + recensies[randomNum].name)
+            usedIndices.push(randomNum)
+            completed = true
+        }
+    }
+}
 
-fillReview(getRandomInt(8))
+
 
