@@ -70,9 +70,9 @@ for (let i = 0; i < 4; i++) {
 
 const fadeUp = document.querySelectorAll('.fade-up')
 const container = document.querySelector('#fixed-container')
+let height = fadeUp[0].getBoundingClientRect().height
 fadeUp.forEach((element, i) => {
-    // console.log(element.getBoundingClientRect().y)
-    console.log(i);
+    // let height = element.getBoundingClientRect().height
     gsap.from(element, {
         duration: 0.5,
         y: "35px",
@@ -81,7 +81,8 @@ fadeUp.forEach((element, i) => {
         scrollTrigger: {
             trigger: element,
             // markers: { startColor: "green", endColor: "red", fontSize: "12px" },
-            start: 100 + window.innerWidth < 800 ? 1300 * i : 550 * i
+            // start: 100 + window.innerWidth < 800 ? 1300 * i : 550 * i
+            start: 100 + height * i * 1.1
         }
     })
 });

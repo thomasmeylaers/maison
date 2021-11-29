@@ -39,41 +39,53 @@ $(window).on('load', function () {
 
 
     }
-    // window.onscroll = function () { scrollFunction() };
-    // function scrollFunction() {
-    //     if (screen.width > '1024') {
-    //         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    //             document.getElementById("nav").style.backgroundColor = "white";
-    //             $('.nav__link').css({ 'color': 'black' });
-    //             $('.nav__stripe').css({ 'color': 'black' });
-    //             $('#logo_wit').css({ 'display': 'none' })
-    //             $('#logo_groen').css({ 'display': 'block' })
-    //         } else {
-    //             document.getElementById("nav").style.backgroundColor = "transparent";
-    //             $('.nav__link').css({ 'color': 'white' });
-    //             $('.nav__stripe').css({ 'color': 'white' });
-    //             $('#logo_wit').css({ 'display': 'block' })
-    //             $('#logo_groen').css({ 'display': 'none' })
-    //         }
-    //     } else {
-    //         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    //             document.getElementById("nav").style.backgroundColor = "white";
-    //             $('.nav__link').css({ 'color': 'black' });
-    //             $('.nav__stripe').css({ 'color': 'black' });
-    //             $('#logo_wit').css({ 'display': 'none' })
-    //             $('#logo_groen').css({ 'display': 'block' })
-    //         } else {
-    //             document.getElementById("nav").style.backgroundColor = "transparent";
-    //             $('.nav__link').css({ 'color': 'white' });
-    //             $('.page__link').css({ 'color': 'black' });
-    //             $('.nav__stripe').css({ 'color': 'white' });
-    //             $('#logo_wit').css({ 'display': 'block' })
-    //             $('#logo_groen').css({ 'display': 'none' })
-    //         }
-    //     }
-    // }
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+        if (screen.width > '1024') {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("nav").style.backgroundColor = "white";
+                $('.nav__link').css({ 'color': 'black' });
+                $('.nav__stripe').css({ 'color': 'black' });
+                $('#logo_wit').css({ 'display': 'none' })
+                $('#logo_groen').css({ 'display': 'block' })
+            } else {
+                document.getElementById("nav").style.backgroundColor = "transparent";
+                $('.nav__link').css({ 'color': 'white' });
+                $('.nav__stripe').css({ 'color': 'white' });
+                $('#logo_wit').css({ 'display': 'block' })
+                $('#logo_groen').css({ 'display': 'none' })
+            }
+        } else {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("nav").style.backgroundColor = "white";
+                $('.nav__link').css({ 'color': 'black' });
+                $('.nav__stripe').css({ 'color': 'black' });
+                $('#logo_wit').css({ 'display': 'none' })
+                $('#logo_groen').css({ 'display': 'block' })
+            } else {
+                document.getElementById("nav").style.backgroundColor = "transparent";
+                $('.nav__link').css({ 'color': 'white' });
+                $('.page__link').css({ 'color': 'black' });
+                $('.nav__stripe').css({ 'color': 'white' });
+                $('#logo_wit').css({ 'display': 'block' })
+                $('#logo_groen').css({ 'display': 'none' })
+            }
+        }
+    }
 
-
+    // If initial position of the screen is not at the top 
+    function initialFix() {
+        if (screen.width > '1024') {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("nav").style.backgroundColor = "white";
+                $('.nav__link').css({ 'color': 'black' });
+                $('.nav__stripe').css({ 'color': 'black' });
+                $('#logo_wit').css({ 'display': 'none' })
+                $('#logo_groen').css({ 'display': 'block' })
+            }
+        }
+    }
+    initialFix()
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     let vh = window.innerHeight * 0.01;
     // Then we set the value in the --vh custom property to the root of the document
@@ -87,6 +99,37 @@ $(window).on('load', function () {
 
     navSlide()
 
+    // Button hover animation
+    let buttons = $(".animation-button")
+    let chevron = $(".animation-button-chevron")
+    buttons.each(function (index) {
+        $(this).hover(function () {
+            gsap.to(chevron.eq(index), {
+                duration: 0.5,
+                x: 8,
+                ease: "ease-out",
+            })
+        }, function () {
+            gsap.to(chevron.eq(index), {
+                duration: 0.5,
+                x: 0,
+                ease: "ease-out",
+            })
+        })
+    })
+    // button.hover(function () {
+    //     gsap.to(chevron, {
+    //         duration: 0.5,
+    //         x: 8,
+    //         ease: "ease-out",
+    //     })
+    // }, function () {
+    //     gsap.to(chevron, {
+    //         duration: 0.5,
+    //         x: 0,
+    //         ease: "ease-out",
+    //     })
+    // })
 
 
 
@@ -147,7 +190,7 @@ $(window).on('load', function () {
             opacity: "0",
             scrollTrigger: {
                 trigger: element,
-                markers: { startColor: "green", endColor: "red", fontSize: "12px" }
+
             }
         })
     })
