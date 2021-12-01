@@ -5,10 +5,7 @@ const config = {
     heightRatio: 1.2,
 }
 
-var elms = document.getElementsByClassName('splide');
-for (var i = 0, len = elms.length; i < len; i++) {
-    new Splide(elms[i], config).mount();
-}
+
 $(window).on('load', function () {
 
     const navSlide = () => {
@@ -217,3 +214,8 @@ $(window).on('load', function () {
         })
     })
 });
+
+var elms = document.getElementsByClassName('splide');
+for (var i = 0, len = elms.length; i < len; i++) {
+    new Splide(elms[i], config).mount();
+}
