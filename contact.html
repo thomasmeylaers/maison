@@ -86,27 +86,23 @@
                 <form action="https://freshpepperdesign.com/mailserver/maison" method="POST">
                     <div class="contact__form__form__wrapper__grid">
                         <div class="contact__form__form__wrapper__grid__unit"><label for="">Voornaam</label>
-                            <input type="text">
+                            <input name="voornaam" type="text">
                         </div>
                         <div class="contact__form__form__wrapper__grid__unit"><label for="">Achternaam</label>
-                            <input type="text">
+                            <input name="achternaam" type="text">
                         </div>
                         <div class="contact__form__form__wrapper__grid__unit"><label for="">E-mailadres</label>
-                            <input type="text">
+                            <input name="email" type="text">
                         </div>
                         <div class="contact__form__form__wrapper__grid__unit"><label for="">Telefoonnummer</label>
-                            <input type="text">
+                            <input name="telefoon" type="text">
                         </div>
-
-
-
-
                     </div>
                     <label for="">Bericht</label>
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <textarea name="bericht" id="" cols="30" rows="5"></textarea>
                     <div class="">
-                        <button type="submit">Versturen <img src="img/chevron-right-solid.svg"
-                                alt="chevron right solid"></button>
+                        <button type="submit" class="animation-button">Versturen <img class="animation-button-chevron"
+                                src="img/chevron-right-solid.svg" alt="chevron right solid"></button>
                     </div>
                 </form>
                 <div class="contact__form__form__wrapper__mobile">
@@ -161,11 +157,11 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="js/gsap/gsap.min.js"></script>
+    <script src="js/gsap/ScrollTrigger.min.js"></script>
     <script src="js/jquery.min.js"></script>
 
-    <script defer src="js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
