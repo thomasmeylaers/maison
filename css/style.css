@@ -557,6 +557,21 @@ a {
           transform: translateX(0%);
 }
 
+@font-face {
+  font-family: Northwell;
+  src: url("../fonts/Northwell.otf");
+}
+
+@font-face {
+  font-family: NorthwellSwash;
+  src: url("../fonts/Northwell-Swash.otf");
+}
+
+@font-face {
+  font-family: NorthwellAlt;
+  src: url("../fonts/Northwell-Alt.otf");
+}
+
 .hero {
   position: relative;
   height: 100vh;
@@ -584,12 +599,15 @@ a {
 }
 
 .hero__title {
-  font-size: 40px;
-  line-height: 2.5ch;
+  font-size: 50px;
+  line-height: 3ch;
   text-align: center;
   color: white;
+  letter-spacing: 5px;
   text-transform: uppercase;
   font-weight: lighter;
+  font-family: NorthwellAlt;
+  font-weight: 800;
 }
 
 .hero__title span {
@@ -748,7 +766,7 @@ a {
 }
 
 .kamers .card__mask__2 {
-  background-image: url("../img/accomodaties/nature/compressed/nature_1.jpg");
+  background-image: url("../img/index/compressed/nature_1.jpg");
 }
 
 .kamers .card__mask__3 {
@@ -756,7 +774,7 @@ a {
 }
 
 .kamers .card__mask__4 {
-  background-image: url("../img/accomodaties/aventure/compressed/aventure_3.jpg");
+  background-image: url("../img/index/compressed/aventure_1.jpg");
 }
 
 .kamers .card__mask__5 {
@@ -1047,8 +1065,10 @@ a {
     right: -500px;
   }
   .activiteiten .isolijnen__2 {
-    bottom: -221px;
-    left: -200px;
+    position: absolute;
+    width: 500px;
+    bottom: -194px;
+    left: -165px;
   }
   .activiteiten button {
     margin-top: 4rem;
@@ -1138,6 +1158,28 @@ a {
   }
 }
 
+@media (min-width: 64em) {
+  .activiteiten .isolijnen {
+    position: absolute;
+  }
+  .activiteiten .isolijnen__2 {
+    width: 400px;
+    bottom: -155px;
+    left: -132px;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .activiteiten .isolijnen {
+    position: absolute;
+  }
+  .activiteiten .isolijnen__2 {
+    width: 214px;
+    bottom: -83px;
+    left: -71px;
+  }
+}
+
 .contact {
   padding-top: 5rem;
   padding-bottom: 8rem;
@@ -1208,15 +1250,24 @@ a {
   font-weight: lighter;
 }
 
+@media (min-width: 87.5em) {
+  .contact__isolijnen {
+    position: absolute;
+    top: -108px;
+    left: -165px;
+    width: 500px;
+  }
+}
+
 @media (min-width: 64em) {
   .contact .contact__form {
     padding-top: 17rem;
   }
   .contact__isolijnen {
     position: absolute;
-    scale: 1;
-    top: 0;
-    left: -11px;
+    top: -88px;
+    left: -131px;
+    width: 400px;
   }
   .contact__bg {
     background-color: #FCE8DE;
@@ -1261,8 +1312,8 @@ a {
   .contact__isolijnen {
     position: absolute;
     width: 214px;
-    top: -21px;
-    left: -11px;
+    top: -47px;
+    left: -70px;
   }
   .contact__bg {
     display: none;
@@ -2288,7 +2339,7 @@ a {
 
 .activiteiten__families__images #noirlac {
   position: absolute;
-  right: 280px;
+  right: 180px;
   bottom: 80px;
 }
 
@@ -2297,7 +2348,7 @@ a {
 }
 
 .activiteiten__families__images #noirlac::after {
-  content: "Zoo Beauval";
+  content: "Abbaye de Noirlac";
   display: block;
   font-size: 14px;
 }

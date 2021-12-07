@@ -13,8 +13,10 @@
         right: -500px;
       }
       &__2 {
-        bottom: -221px;
-        left: -200px;
+        position: absolute;
+        width: 500px;
+        bottom: -194px;
+        left: -165px;
       }
     }
     button {
@@ -95,6 +97,28 @@
       margin: auto;
       button {
         margin-top: 2rem;
+      }
+    }
+  }
+  @include breakpoint-up(large) {
+    .isolijnen {
+      position: absolute;
+
+      &__2 {
+        width: 400px;
+        bottom: -155px;
+        left: -132px;
+      }
+    }
+  }
+  @include breakpoint-down(medium) {
+    .isolijnen {
+      position: absolute;
+
+      &__2 {
+        width: 214px;
+        bottom: -83px;
+        left: -71px;
       }
     }
   }

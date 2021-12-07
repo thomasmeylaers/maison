@@ -48,15 +48,23 @@
       }
     }
   }
+  @include breakpoint-up(xlarge) {
+    &__isolijnen {
+      position: absolute;
+      top: -108px;
+      left: -165px;
+      width: 500px;
+    }
+  }
   @include breakpoint-up(large) {
     .contact__form {
       padding-top: 17rem;
     }
     &__isolijnen {
       position: absolute;
-      scale: 1;
-      top: 0;
-      left: -11px;
+      top: -88px;
+      left: -131px;
+      width: 400px;
     }
     &__bg {
       background-color: $lightOrange;
@@ -94,8 +102,8 @@
     &__isolijnen {
       position: absolute;
       width: 214px;
-      top: -21px;
-      left: -11px;
+      top: -47px;
+      left: -70px;
     }
     &__bg {
       display: none;
