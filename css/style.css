@@ -601,8 +601,9 @@ a {
   line-height: 3ch;
   text-align: center;
   color: white;
-  text-transform: uppercase;
+  letter-spacing: 5px;
   font-weight: lighter;
+  font-family: NorthwellAlt;
 }
 
 .hero__title span {
@@ -1104,10 +1105,12 @@ a {
   .activiteiten__img__petanque {
     top: 100px;
     right: -100px;
+    border-radius: 40px;
   }
   .activiteiten__img__zwemmen {
     top: 380px;
     right: 400px;
+    border-radius: 40px;
   }
   .activiteiten__img__wandelen {
     top: 600px;
