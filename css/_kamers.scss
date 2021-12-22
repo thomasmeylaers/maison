@@ -86,6 +86,7 @@
       p {
         transform: rotate(-30deg);
       }
+      display: none;
     }
   }
   @include breakpoint-down(large) {

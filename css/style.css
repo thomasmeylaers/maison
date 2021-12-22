@@ -861,6 +861,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    display: none;
   }
   .kamers .card__mask__overlay p {
     -webkit-transform: rotate(-30deg);
