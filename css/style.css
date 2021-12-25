@@ -570,6 +570,11 @@ a {
   src: url("../fonts/Northwell-Alt.otf");
 }
 
+@font-face {
+  font-family: BroadcastMatter;
+  src: url("../fonts/Broadcast_Matter.ttf");
+}
+
 .hero {
   position: relative;
   height: 100vh;
@@ -602,8 +607,8 @@ a {
   text-align: center;
   color: white;
   letter-spacing: 5px;
-  font-weight: lighter;
-  font-family: NorthwellAlt;
+  font-weight: 100;
+  font-family: BroadcastMatter;
 }
 
 .hero__title span {
