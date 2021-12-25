@@ -58,6 +58,9 @@
     video {
       //   width: 100%;
     }
+    #br-2 {
+      display: none;
+    }
   }
   @include breakpoint-down(medium) {
     height: calc(var(--vh, 1vh) * 100);
@@ -67,12 +70,15 @@
       max-height: calc(var(--vh, 1vh) * 100);
     }
     &__title {
-      font-size: 24px;
-      font-weight: bold;
+      font-size: 30px;
+      font-weight: 100;
       padding: 0 1rem;
       span {
         font-weight: 200;
         font-size: 16px;
+      }
+      #br-1 {
+        display: none;
       }
     }
   }

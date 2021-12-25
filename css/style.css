@@ -620,6 +620,12 @@ a {
   position: absolute;
 }
 
+@media (min-width: 64em) {
+  .hero #br-2 {
+    display: none;
+  }
+}
+
 @media (max-width: 63.9375em) {
   .hero {
     height: calc(var(--vh, 1vh) * 100);
@@ -629,13 +635,16 @@ a {
     max-height: calc(var(--vh, 1vh) * 100);
   }
   .hero__title {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 100;
     padding: 0 1rem;
   }
   .hero__title span {
     font-weight: 200;
     font-size: 16px;
+  }
+  .hero__title #br-1 {
+    display: none;
   }
 }
 
