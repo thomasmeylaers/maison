@@ -26,7 +26,7 @@
     color: white;
   }
 
-  @include breakpoint-up(large) {
+  @include breakpoint-up(xlarge) {
     &__logo {
       img {
         width: 10rem;
@@ -72,7 +72,7 @@
     }
   }
 
-  @include breakpoint-down(large) {
+  @include breakpoint-down(xlarge) {
     #logo_wit {
       width: 8rem;
     }
@@ -102,6 +102,9 @@
       }
     }
     &__links {
+      .nav__link {
+        color: black;
+      }
       margin-top: 0;
       position: absolute;
       right: 0px;
@@ -122,6 +125,9 @@
         opacity: 0;
       }
       transition: transform 0.5s ease-in;
+    }
+    .nav__link {
+      // color: green;
     }
     &__burger {
       background-color: $darkOrange;

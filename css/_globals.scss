@@ -109,13 +109,13 @@ button,
 
 .fixed-container {
   margin: 0 auto;
-  @include breakpoint-up(large) {
+  @include breakpoint-up(xlarge) {
     width: 1173px;
   }
-  @include breakpoint-down(large) {
+  @include breakpoint-down(xlarge) {
     width: 920px;
   }
-  @include breakpoint-down(medium) {
+  @include breakpoint-down(large) {
     width: 90vw;
   }
 }

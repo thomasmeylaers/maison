@@ -20,7 +20,7 @@ function getRandomInt(max) {
 for (let i = 0; i < 4; i++) {
     let completed = false
     while (!completed) {
-        const randomNum = getRandomInt(10)
+        const randomNum = getRandomInt(9)
         if (!usedIndices.includes(randomNum)) {
             $(".text-selector").eq(i).text(recensies[randomNum].text)
             $(".name-selector").eq(i).text("-" + recensies[randomNum].name)

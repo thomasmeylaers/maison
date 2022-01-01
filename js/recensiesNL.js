@@ -35,10 +35,10 @@ const recensies = [
         text: '	"Très bon accueil !!! Agréable séjour ! Ambiance familiale et chambre très propre. Calme assuré. Probablement à bientôt."',
         name: 'Mr et Mme Huvelin'
     },
-    {
-        text: '	"Wij hebben zo hard genoten van ons verblijf bij jullie.  Jullie drive om jullie gasten een topverblijf te bezorgen heeft ons erg gecharmeerd. De manier waarop jullie inspeelden op onze ‘kleine kindjes”-behoefte heeft ons extra doen relaxen en jullie gastvrijheid zorgde ervoor dat we ons hier vanaf het eerste moment thuis voelden.  Wij hebben erg genoten van jullie kookkunsten en fijne babbels. Jullie zijn een goed team. We wensen jullie alle succes toe en komen graag nog eens terug !"',
-        name: 'Roel en Kristine, Lena en Cleo'
-    },
+    // {
+    //     text: '	"Wij hebben zo hard genoten van ons verblijf bij jullie.  Jullie drive om jullie gasten een topverblijf te bezorgen heeft ons erg gecharmeerd. De manier waarop jullie inspeelden op onze ‘kleine kindjes”-behoefte heeft ons extra doen relaxen en jullie gastvrijheid zorgde ervoor dat we ons hier vanaf het eerste moment thuis voelden.  Wij hebben erg genoten van jullie kookkunsten en fijne babbels. Jullie zijn een goed team. We wensen jullie alle succes toe en komen graag nog eens terug !"',
+    //     name: 'Roel en Kristine, Lena en Cleo'
+    // },
     {
         text: '	"Beste familie, hartelijk dank voor jullie gastvrijheid en zorg !  Het was heerlijk om hier te zijn.  Het is een prachtige plek om tot rust te komen. "',
         name: ''

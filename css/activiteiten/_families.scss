@@ -127,7 +127,7 @@
       }
     }
   }
-  @include breakpoint-up(large) {
+  @include breakpoint-up(xlarge) {
     margin-top: 10rem;
     &__text {
       &__mobile {
@@ -135,7 +135,7 @@
       }
     }
   }
-  @include breakpoint-down(large) {
+  @include breakpoint-down(xlarge) {
     &__images {
       display: none;
     }

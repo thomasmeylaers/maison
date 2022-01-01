@@ -1,6 +1,6 @@
 .over {
   position: relative;
-  @include breakpoint-up(large) {
+  @include breakpoint-up(xlarge) {
     margin-top: 5rem;
     &__wrapper {
       width: 100%;
@@ -50,12 +50,28 @@
       top: 109px;
     }
   }
-  @include breakpoint-down(large) {
-    .fixed-container {
-      padding-left: calc((100vw - 920px) / 2);
-    }
-  }
-  @include breakpoint-down(medium) {
+  // @include breakpoint-down(xlarge) {
+  //   margin: 10rem 0;
+  //   .fixed-container {
+  //     padding-left: calc((100vw - 920px) / 2);
+  //   }
+  //   &__background {
+  //     width: 100vw;
+  //     height: 200px;
+  //     z-index: -50;
+  //     top: 109px;
+  //     display: none;
+  //   }
+  //   &__img {
+  //     padding-left: 2rem;
+  //     img {
+  //       width: 20rem;
+  //       height: auto;
+  //     }
+  //   }
+  // }
+  @include breakpoint-down(xlarge) {
+    margin-top: 0;
     background-color: $lightOrange;
     padding-top: 4rem;
     &__text__wrapper {
@@ -69,7 +85,7 @@
       }
       button {
         margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
         background-color: $darkOrange;
         color: white;
         font-size: 14px;

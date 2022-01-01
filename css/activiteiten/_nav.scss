@@ -1,12 +1,13 @@
 .activiteiten__nav {
-    background-color: white;
-    button {
-        background-color: $darkOrange;
-        a {
-            color: white;
-        }
+  background-color: white;
+  button {
+    background-color: $darkOrange;
+    color: white;
+    a {
+      color: white;
     }
-    @include breakpoint-down(large) {
-        background-color: white !important;
-    }
+  }
+  @include breakpoint-down(large) {
+    background-color: white !important;
+  }
 }

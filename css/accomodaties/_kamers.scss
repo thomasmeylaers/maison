@@ -13,7 +13,114 @@
       width: 30px;
     }
   }
-  @include breakpoint-up(large) {
+
+  // @include breakpoint-down(large) {
+  @media (max-width: $screen-xl-min) {
+    padding-top: 1rem;
+    .splide {
+      overflow: hidden;
+      border-radius: 50px;
+    }
+    &__unit {
+      border-radius: 50px;
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: white;
+      &__image {
+        &__wrapper {
+          width: 100%;
+          height: 15rem;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 50px;
+        }
+        &__ecrivain {
+          background-image: url("../img/ecrivain.jpg");
+        }
+        &__nature {
+          background-image: url("../img/nature.jpg");
+        }
+        &__voyage {
+          background-image: url("../img/voyage.jpg");
+        }
+        &__romantique {
+          background-image: url("../img/romantique.jpg");
+        }
+        &__chopin {
+          background-image: url("../img/ecrivain.jpg");
+        }
+        &__gite {
+          background-image: url("../img/gite.jpg");
+        }
+      }
+      &__middle {
+        padding: 0rem 2rem;
+        .middle__title {
+          text-align: center;
+          h1 {
+            font-size: 24px;
+            margin-bottom: 0;
+            margin-top: 1rem;
+          }
+        }
+        .middle__text {
+          text-align: center;
+          p {
+            font-size: 14px;
+            line-height: 2.5ch;
+            font-weight: 100;
+          }
+          margin-bottom: 2rem;
+        }
+        .middle__icons {
+          margin: auto;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          column-gap: 0.5rem;
+          &__text {
+            p {
+              font-size: 14px;
+              display: flex;
+              align-items: center;
+              font-weight: 200;
+              img {
+                width: 25px;
+                margin-right: 0.7rem;
+              }
+            }
+          }
+        }
+      }
+      &__right {
+        text-align: center;
+        padding: 0rem 2rem;
+        padding-bottom: 2rem;
+        button {
+          color: white;
+          background-color: $darkOrange;
+          margin: 0 auto;
+        }
+        .right__price {
+          h1 {
+            line-height: 1ch;
+            margin-bottom: 2rem;
+          }
+          p {
+            margin-top: 0.2rem;
+            margin-bottom: 2rem;
+          }
+          &__smaller {
+            font-size: 14px;
+            font-weight: lighter;
+          }
+        }
+      }
+    }
+  }
+  @include xl {
     &__unit {
       overflow: hidden;
       .splide {
@@ -110,110 +217,6 @@
           &__smaller {
             font-size: 12px;
             font-weight: 300;
-          }
-        }
-      }
-    }
-  }
-  @include breakpoint-down(large) {
-    padding-top: 1rem;
-    .splide {
-      overflow: hidden;
-      border-radius: 50px;
-    }
-    &__unit {
-      border-radius: 50px;
-      margin-top: 5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background-color: white;
-      &__image {
-        &__wrapper {
-          width: 100%;
-          height: 15rem;
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          border-radius: 50px;
-        }
-        &__ecrivain {
-          background-image: url("../img/ecrivain.jpg");
-        }
-        &__nature {
-          background-image: url("../img/nature.jpg");
-        }
-        &__voyage {
-          background-image: url("../img/voyage.jpg");
-        }
-        &__romantique {
-          background-image: url("../img/romantique.jpg");
-        }
-        &__chopin {
-          background-image: url("../img/ecrivain.jpg");
-        }
-        &__gite {
-          background-image: url("../img/gite.jpg");
-        }
-      }
-      &__middle {
-        padding: 0rem 2rem;
-        .middle__title {
-          text-align: center;
-          h1 {
-            font-size: 24px;
-            margin-bottom: 0;
-            margin-top: 1rem;
-          }
-        }
-        .middle__text {
-          text-align: center;
-          p {
-            font-size: 14px;
-            line-height: 2.5ch;
-            font-weight: 100;
-          }
-          margin-bottom: 2rem;
-        }
-        .middle__icons {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          column-gap: 0.5rem;
-          &__text {
-            p {
-              font-size: 14px;
-              display: flex;
-              align-items: center;
-              font-weight: 200;
-              img {
-                width: 25px;
-                margin-right: 0.7rem;
-              }
-            }
-          }
-        }
-      }
-      &__right {
-        text-align: center;
-        padding: 0rem 2rem;
-        padding-bottom: 2rem;
-        button {
-          color: white;
-          background-color: $darkOrange;
-          margin: 0 auto;
-        }
-        .right__price {
-          h1 {
-            line-height: 1ch;
-            margin-bottom: 2rem;
-          }
-          p {
-            margin-top: 0.2rem;
-            margin-bottom: 2rem;
-          }
-          &__smaller {
-            font-size: 14px;
-            font-weight: lighter;
           }
         }
       }

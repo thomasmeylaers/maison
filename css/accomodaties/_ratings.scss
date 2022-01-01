@@ -28,7 +28,39 @@
       font-size: 16px;
     }
   }
-  @include breakpoint-up(large) {
+
+  &__desktop {
+    display: none;
+  }
+  position: relative;
+  padding: 5rem 0;
+  .container {
+    display: flex;
+  }
+  &__unit {
+    position: relative;
+    z-index: 100000;
+    background-color: white;
+    border-radius: 50px;
+    padding: 2rem;
+    margin: 0 2rem;
+    font-size: 14px;
+    line-height: 2.5ch;
+    margin-top: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    &__name {
+      font-family: "Pacifico";
+      font-size: 16px;
+    }
+  }
+  li {
+    position: relative;
+  }
+  .splide__arrows {
+    display: none;
+  }
+  @include xl {
     position: relative;
     padding: 5rem 0;
     .fixed-container {
@@ -41,6 +73,8 @@
     }
     &__unit {
       background-color: white;
+      transform: translateY(0);
+
       border-radius: 50px;
       padding: 2rem;
       padding-bottom: 3rem;
@@ -55,38 +89,6 @@
       display: none;
     }
     &__mobile {
-      display: none;
-    }
-  }
-  @include breakpoint-down(large) {
-    &__desktop {
-      display: none;
-    }
-    position: relative;
-    padding: 5rem 0;
-    .container {
-      display: flex;
-    }
-    &__unit {
-      position: relative;
-      z-index: 100000;
-      background-color: white;
-      border-radius: 50px;
-      padding: 2rem;
-      font-size: 14px;
-      line-height: 2.5ch;
-      margin-top: auto;
-      top: 50%;
-      transform: translateY(-50%);
-      &__name {
-        font-family: "Pacifico";
-        font-size: 16px;
-      }
-    }
-    li {
-      position: relative;
-    }
-    .splide__arrows {
       display: none;
     }
   }

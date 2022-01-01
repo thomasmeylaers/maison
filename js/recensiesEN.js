@@ -35,10 +35,10 @@ const recensies = [
         text: '	"Very good welcoming!!! Pleasant stay! Family atmosphere and very clean room. Calmness assured. Probably see you soon."',
         name: 'Mr and Miss Huvelin'
     },
-    {
-        text: '	"We enjoyed our stay with you so much.  Your drive to provide your guests with a top-notch stay charmed us greatly. The way you anticipated our "little kids" needs made us feel extra relaxed and your hospitality made us feel at home from the moment we arrived.  We really enjoyed your cooking and fine chats. You guys are a great team. We wish you all the best and would love to come back!"',
-        name: 'Roel en Kristine, Lena en Cleo'
-    },
+    // {
+    //     text: '	"We enjoyed our stay with you so much.  Your drive to provide your guests with a top-notch stay charmed us greatly. The way you anticipated our "little kids" needs made us feel extra relaxed and your hospitality made us feel at home from the moment we arrived.  We really enjoyed your cooking and fine chats. You guys are a great team. We wish you all the best and would love to come back!"',
+    //     name: 'Roel en Kristine, Lena en Cleo'
+    // },
     {
         text: '	"Dear family, thank you very much for your hospitality and care !  It was wonderful to be here.  It is a wonderful place to unwind."',
         name: ''

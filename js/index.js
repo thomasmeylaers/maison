@@ -1,9 +1,18 @@
+let heightRatio
+if (screen.width > '900' && screen.width <= "1200") {
+    heightRatio = 0.5
+} else {
+    heightRatio = 1.2
+}
 // Splide Init
 const config = {
     type: "loop",
     cover: true,
-    heightRatio: 1.2,
+    heightRatio: heightRatio
+    // heightRatio: 1.2,
 }
+
+
 
 
 $(window).on('load', function () {

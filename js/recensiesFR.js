@@ -36,10 +36,10 @@ const recensies = [
         text: '	"Très bon accueil !!! Agréable séjour ! Ambiance familiale et chambre très propre. Calme assuré. Probablement à bientôt."',
         name: 'Mr et Mme Huvelin'
     },
-    {
-        text: '	"Nous avons beaucoup apprécié notre séjour chez vous.  Nous étions charmés par votre envie d\'offrir à vos invités un séjour de premier ordre. La façon dont vous avez répondu aux besoins de nos "petits enfants" nous a permis de nous sentir encore plus détendus et votre hospitalité nous a fait nous sentir à la maison dès le premier instant. Nous avons vraiment apprécié votre cuisine et vos conversations agréables. Vous êtes une bonne équipe. Nous vous souhaitons le meilleur et nous serions heureux de revenir!"',
-        name: 'Roel en Kristine, Lena en Cleo'
-    },
+    // {
+    //     text: '	"Nous avons beaucoup apprécié notre séjour chez vous.  Nous étions charmés par votre envie d\'offrir à vos invités un séjour de premier ordre. La façon dont vous avez répondu aux besoins de nos "petits enfants" nous a permis de nous sentir encore plus détendus et votre hospitalité nous a fait nous sentir à la maison dès le premier instant. Nous avons vraiment apprécié votre cuisine et vos conversations agréables. Vous êtes une bonne équipe. Nous vous souhaitons le meilleur et nous serions heureux de revenir!"',
+    //     name: 'Roel en Kristine, Lena en Cleo'
+    // },
     {
         text: '	"Chère famille, merci beaucoup pour votre hospitalité et vos soins !  C\'était merveilleux d\'être ici.  C\'est un endroit merveilleux pour se détendre.  "',
         name: ''

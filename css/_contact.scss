@@ -56,7 +56,7 @@
       width: 500px;
     }
   }
-  @include breakpoint-up(large) {
+  @include breakpoint-up(xlarge) {
     .contact__form {
       padding-top: 17rem;
     }
@@ -95,7 +95,7 @@
       }
     }
   }
-  @include breakpoint-down(medium) {
+  @include breakpoint-down(xlarge) {
     overflow: hidden;
     padding-bottom: 5rem;
     background-color: $lightOrange;
@@ -119,7 +119,7 @@
     }
     &__right__wrapper {
       .section__title {
-        margin-bottom: 0rem;
+        margin-bottom: 4rem;
         img {
           width: 2rem;
         }

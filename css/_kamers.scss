@@ -14,7 +14,7 @@
   .card__mask__5 {
     background-image: url("../img/accomodaties/soleil/compressed/soleil_1.jpg");
   }
-  @include breakpoint-up(large) {
+  @include breakpoint-up(xlarge) {
     &__text__wrapper {
       width: 40%;
       line-height: 2.5ch;
@@ -89,9 +89,9 @@
       display: none;
     }
   }
-  @include breakpoint-down(large) {
+  @include breakpoint-down(xlarge) {
     .section__title {
-      margin-top: 2rem;
+      margin-top: 4rem;
     }
     &__text__wrapper {
       font-size: 14px;
@@ -101,7 +101,7 @@
       background-color: $darkOrange;
       color: white;
       margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
       font-size: 14px;
     }
     &__cards__wrapper {
