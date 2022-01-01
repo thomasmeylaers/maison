@@ -11,7 +11,7 @@
       margin-left: 0.5rem;
       margin-bottom: 0.5rem;
       font-size: 16px;
-      font-weight: lighter;
+      font-weight: 300;
     }
     &__grid {
       width: 100%;
@@ -29,6 +29,9 @@
   }
   @include breakpoint-up(xlarge) {
     padding-bottom: 5rem;
+    &__bg {
+      display: none;
+    }
     &__form__wrapper {
       margin-top: -240px;
       &__mobile {
