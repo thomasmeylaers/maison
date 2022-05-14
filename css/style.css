@@ -2541,6 +2541,13 @@ a {
   position: relative;
 }
 
+.contact__form .confirmatie {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 1rem;
+}
+
 .contact__form .fixed-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2627,7 +2634,7 @@ a {
   .contact__form__bg {
     position: absolute;
     background-color: #FCE8DE;
-    height: 900px;
+    height: 300vh;
     width: 100vw;
     top: 50px;
     z-index: -5;

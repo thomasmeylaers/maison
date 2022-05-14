@@ -1,4 +1,10 @@
 .contact__form {
+  .confirmatie {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 1rem;
+  }
   position: relative;
   .fixed-container {
     display: flex;
@@ -71,7 +77,7 @@
     &__bg {
       position: absolute;
       background-color: $lightOrange;
-      height: 900px;
+      height: 300vh;
       width: 100vw;
       top: 50px;
       z-index: -5;
