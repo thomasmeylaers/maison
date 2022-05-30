@@ -33,7 +33,7 @@ function submitForm(e) {
     },
     body: JSON.stringify({ voornaam, achternaam, email, telefoon, language, bericht, captcha })
   })
-    .then((res) => res.json())
+    .then(response => response.json())
     .then((data) => {
       if (data.success != true) {
         if (data.msg === "Please select captcha") {
@@ -49,6 +49,9 @@ function submitForm(e) {
             $('#filler').html(errorMessages[language][2]);
           }
         }
+      }
+      else if (data.success == true) {
+        window.location.replace(`https://maisonlaventure.be/${language}`);
       }
     })
 }
