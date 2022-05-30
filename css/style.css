@@ -2543,9 +2543,19 @@ a {
 
 .contact__form .confirmatie {
   margin-bottom: 1rem;
+  margin-top: 1rem;
   font-size: 14px;
   font-weight: 300;
-  margin-left: 1rem;
+  margin-left: 0.2rem;
+}
+
+.contact__form .g-recaptcha {
+  margin-bottom: 1rem;
+}
+
+.contact__form #filler {
+  margin-bottom: 0.5rem;
+  color: red;
 }
 
 .contact__form .fixed-container {
