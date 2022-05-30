@@ -16,6 +16,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -83,31 +84,34 @@
                 <img src="../img/contact/team.jpg" alt="Maison l'Aventure team">
             </div>
             <div class="contact__form__form__wrapper">
-                <form action="https://freshpepperdesign.com/mailserver/maison" method="POST">
+                <form id="contact-form-id" action="https://freshpepperdesign.com/mailserver/simulatie" method="POST">
                     <div class="contact__form__form__wrapper__grid">
                         <div class="contact__form__form__wrapper__grid__unit"><label for="">Prénom</label>
-                            <input name="voornaam" type="text">
+                            <input id="contact-form-voornaam" name="voornaam" type="text">
                         </div>
                         <div class="contact__form__form__wrapper__grid__unit"><label for="">Nom de famille</label>
-                            <input name="achternaam" type="text">
+                            <input id="contact-form-achternaam" name="achternaam" type="text">
                         </div>
                         <div class="contact__form__form__wrapper__grid__unit"><label for="">E-mail</label>
-                            <input name="email" type="text">
+                            <input id="contact-form-email" name="email" type="text">
                         </div>
                         <div class="contact__form__form__wrapper__grid__unit"><label for="">Telephone</label>
-                            <input name="telefoon" type="text">
+                            <input id="contact-form-telefoon" name="telefoon" type="text">
                         </div>
-                        <input type="hidden" name="language" value="fr">
+                        <input id="language" type="hidden" name="language" value="fr">
 
                     </div>
                     <label for="">Message</label>
-                    <textarea name="bericht" id="" cols="30" rows="5"></textarea>
+                    <textarea id="contact-form-bericht" name="bericht" id="" cols="30" rows="5"></textarea>
                     <div class="">
+                        <div id="filler"></div>
+                        <div class="g-recaptcha" data-sitekey="6LdHoy0gAAAAANZNNxRGQOcUELmMn6_3dd5R5t0R"></div>
+
+                        <button type="submit" class="animation-button">Envoyer <img class="animation-button-chevron"
+                                src="../img/chevron-right-solid.svg" alt="chevron right solid"></button>
                         <div class="confirmatie">Si vous ne recevez pas d'e-mail de confirmation dans un délai d'un
                             jour, veuillez réessayer.
                         </div>
-                        <button type="submit" class="animation-button">Envoyer <img class="animation-button-chevron"
-                                src="../img/chevron-right-solid.svg" alt="chevron right solid"></button>
                     </div>
                 </form>
                 <div class="contact__form__form__wrapper__mobile">
@@ -168,6 +172,8 @@
     <script src="../js/jquery.min.js"></script>
 
     <script src="../js/index.js"></script>
+    <script src="../js/contact.js"></script>
+
 </body>
 
 </html>
