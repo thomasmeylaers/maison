@@ -25,7 +25,7 @@ function submitForm(e) {
   const language = document.querySelector('#language').value
   const captcha = document.querySelector('#g-recaptcha-response').value
 
-  fetch('https://freshpepperdesign.com/mailserver/simulatie', {
+  fetch('https://freshpepperdesign.com/mailserver/maison', {
     method: 'POST',
     headers: {
       'Accept': 'application/json, text/plan, */*',
