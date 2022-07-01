@@ -125,14 +125,22 @@
       overflow: hidden;
       .splide {
         overflow: hidden;
-        min-width: 400px;
-        border-radius: 50px;
+        max-width: 440px;
+        border-radius: 20px;
+         span {
+          display: none;
+         }
       }
+      .splide__slide {
+        height: 100px;
+      } 
       .splide__slide img {
         width: 100%;
-        height: auto;
+        // height: auto;
+        margin-top: 50%;
+        transform: translateY(-45%);
       }
-      border-radius: 50px;
+      border-radius: 20px;
       padding-right: 5rem;
       &:not(:first-child) {
         margin-top: 5rem;

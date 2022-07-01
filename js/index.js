@@ -2,14 +2,16 @@ let heightRatio
 if (screen.width > '900' && screen.width <= "1200") {
     heightRatio = 0.5
 } else {
-    heightRatio = 1.2
+    heightRatio = 1.1
 }
 // Splide Init
 const config = {
     type: "loop",
-    cover: true,
+    // cover: true,
+    lazyLoad: true,
     heightRatio: heightRatio
-    // heightRatio: 1.2,
+
+    // heightRatio: 1,
 }
 
 

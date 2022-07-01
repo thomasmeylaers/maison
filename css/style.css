@@ -770,7 +770,7 @@ a {
 }
 
 .kamers .card__mask__1 {
-  background-image: url("../img/accomodaties/relax/compressed/relax_1.jpg");
+  background-image: url("../img/accomodaties/relax/100kb/relax_1.jpg");
 }
 
 .kamers .card__mask__2 {
@@ -778,15 +778,15 @@ a {
 }
 
 .kamers .card__mask__3 {
-  background-image: url("../img/accomodaties/voyage/compressed/voyage_1.jpg");
+  background-image: url("../img/accomodaties/voyage/100kb/voyage_1.jpg");
 }
 
 .kamers .card__mask__4 {
-  background-image: url("../img/index/compressed/aventure_1.jpg");
+  background-image: url("../img/accomodaties/aventure/100kb/aventure_3.jpg");
 }
 
 .kamers .card__mask__5 {
-  background-image: url("../img/accomodaties/soleil/compressed/soleil_1.jpg");
+  background-image: url("../img/accomodaties/soleil/100kb/soleil_2.jpg");
 }
 
 @media (min-width: 1200px) {
@@ -999,7 +999,7 @@ a {
   .ontspan__img__wrapper {
     width: 40%;
     height: 800px;
-    background-image: url("../img/index/1mb/ontspan.jpg");
+    background-image: url("../img/index/1mb/ontspan2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1710,7 +1710,7 @@ a {
 @media (min-width: 1200px) {
   .accomodaties__kamers__unit {
     overflow: hidden;
-    border-radius: 50px;
+    border-radius: 20px;
     padding-right: 5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1722,12 +1722,20 @@ a {
   }
   .accomodaties__kamers__unit .splide {
     overflow: hidden;
-    min-width: 400px;
-    border-radius: 50px;
+    max-width: 440px;
+    border-radius: 20px;
+  }
+  .accomodaties__kamers__unit .splide span {
+    display: none;
+  }
+  .accomodaties__kamers__unit .splide__slide {
+    height: 100px;
   }
   .accomodaties__kamers__unit .splide__slide img {
     width: 100%;
-    height: auto;
+    margin-top: 50%;
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
   }
   .accomodaties__kamers__unit:not(:first-child) {
     margin-top: 5rem;
@@ -2708,5 +2716,11 @@ a {
     top: 50px;
     z-index: -5;
   }
+}
+
+.test-section {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */
