@@ -759,7 +759,7 @@ a {
     width: 100%;
     height: 30vh;
     height: calc(var(--vh, 1vh) * 30);
-    background-image: url("../img/index/1.jpg");
+    background-image: url("../img/index/100kb/14.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1505,7 +1505,7 @@ a {
 .accomodaties__hero__img {
   width: 100%;
   height: 250px;
-  background-image: url("../img/accomodaties/nature/accomodaties.jpg");
+  background-image: url("../img/accomodaties/1mb/hero.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1599,6 +1599,15 @@ a {
     overflow: hidden;
     border-radius: 50px;
   }
+  .accomodaties__kamers .splide span {
+    display: none;
+  }
+  .accomodaties__kamers .splide__slide img {
+    width: 100%;
+    margin-top: 50%;
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
+  }
   .accomodaties__kamers__unit {
     border-radius: 50px;
     margin-top: 5rem;
@@ -1618,7 +1627,7 @@ a {
     width: 100%;
     height: 15rem;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     border-radius: 50px;
   }
@@ -2182,7 +2191,7 @@ a {
 }
 
 .activiteiten__activiteiten__unit .bar {
-  background-image: url("../img/activiteiten/bar_2.jpg");
+  background-image: url("../img/activiteiten/100kb/bistro.jpg");
 }
 
 .activiteiten__activiteiten__unit .vissen {
@@ -2190,7 +2199,7 @@ a {
 }
 
 .activiteiten__activiteiten__unit .zwemmen {
-  background-image: url("../img/activiteiten/compressed/zwemmen.jpg");
+  background-image: url("../img/activiteiten/100kb/zwembad.jpg");
 }
 
 .activiteiten__activiteiten__unit .wandelen {
