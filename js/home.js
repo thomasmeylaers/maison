@@ -35,8 +35,19 @@ function scrollFunction() {
 
 video = document.getElementById("video")
 playButton = document.getElementById("i-play-button")
+heroTitle = document.getElementById("i-hero__title")
 
 playVideo = () => {
   video.play();
 }
+
+heroFadeOut = () => {
+  gsap.to("#i-hero__title", {
+    opacity: 0,
+    duration: 1
+  })
+}
+
 playButton.onclick = playVideo;
+
+setTimeout(heroFadeOut, 2000)

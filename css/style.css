@@ -477,12 +477,6 @@ a {
   .nav__lang li:not(:last-child) {
     margin-right: 0.5rem;
   }
-  .nav__lang li:first-child {
-    font-weight: bolder;
-  }
-  .nav__lang li:not(:first-child) {
-    font-weight: lighter;
-  }
   .nav__links {
     margin-top: 0;
     position: absolute;

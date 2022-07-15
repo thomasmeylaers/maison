@@ -93,12 +93,12 @@
         &:not(:last-child) {
           margin-right: 0.5rem;
         }
-        &:first-child {
-          font-weight: bolder;
-        }
-        &:not(:first-child) {
-          font-weight: lighter;
-        }
+        // &:first-child {
+        //   font-weight: bolder;
+        // }
+        // &:not(:first-child) {
+        //   font-weight: lighter;
+        // }
       }
     }
     &__links {
