@@ -32,3 +32,11 @@ function scrollFunction() {
     }
   }
 }
+
+video = document.getElementById("video")
+playButton = document.getElementById("i-play-button")
+
+playVideo = () => {
+  video.play();
+}
+playButton.onclick = playVideo;
