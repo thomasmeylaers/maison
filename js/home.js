@@ -1,4 +1,3 @@
-
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
   if (screen.width > '1024') {
@@ -50,4 +49,4 @@ heroFadeOut = () => {
 
 playButton.onclick = playVideo;
 
-setTimeout(heroFadeOut, 2000)
+setTimeout(heroFadeOut, 5000)
