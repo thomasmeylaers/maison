@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="css/style.css?v=1.2">
+    <link rel="stylesheet" href="css/style.css?v=1.3">
 </head>
 
 <body>
@@ -74,8 +74,13 @@
     </section> -->
 
     <section class="hero">
-        <div id="i-play-button" class="c-play-button">
-            <img src="img/play-button.svg" alt="play-button">
+        <div id="i-play-button" class="c-video-controls">
+            <img id="i-play-svg" src="video/buttons/play.svg" alt="play-button">
+            <img id="i-pause-svg" src="video/buttons/pause.svg" alt="pause-button">
+        </div>
+        <div id="i-mute-button" class="c-video-controls">
+            <img id="i-mute-svg" src="video/buttons/mute.svg" alt="mute-button">
+            <img id="i-audio-svg" src="video/buttons/audio.svg" alt="audio-button">
         </div>
         <div class="hero__bg">
 
@@ -388,7 +393,7 @@
 
     <script src="js/gsap/gsap.min.js"></script>
     <script src="js/gsap/ScrollTrigger.min.js"></script>
-    <script src="js/home.js"></script>
+    <script src="js/home.js?v=1.3"></script>
     <script src="js/index.js"></script>
 
 </body>

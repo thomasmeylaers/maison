@@ -588,16 +588,27 @@ a {
           justify-content: center;
 }
 
-.hero .c-play-button {
+.hero .c-video-controls {
   position: absolute;
   width: 50px;
   height: 50px;
-  left: 20px;
   bottom: 20px;
 }
 
-.hero .c-play-button img {
-  opacity: 0.7;
+.hero .c-video-controls img {
+  opacity: 0.9;
+}
+
+.hero #i-play-button {
+  left: 20px;
+}
+
+.hero #i-mute-button {
+  left: 90px;
+}
+
+.hero #i-mute-svg {
+  display: none;
 }
 
 .hero__bg {
@@ -2740,5 +2751,25 @@ a {
   width: 100px;
   height: 100px;
   background-color: red;
+}
+
+/* This used to work for the parent element of button divs */
+/* But it does not work with newer browsers, the below doesn't hide the play button parent div */
+*::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+*::-webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+/* This one works! */
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
 }
 /*# sourceMappingURL=style.css.map */

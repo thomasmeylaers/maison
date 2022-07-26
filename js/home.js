@@ -32,12 +32,65 @@ function scrollFunction() {
   }
 }
 
-video = document.getElementById("video")
-playButton = document.getElementById("i-play-button")
-heroTitle = document.getElementById("i-hero__title")
+let video = document.getElementById("video")
+let playButton = document.getElementById("i-play-button")
+let muteButton = document.getElementById("i-mute-button")
+let playSvg = document.getElementById("i-play-svg")
+let pauseSvg = document.getElementById("i-pause-svg")
+let muteSvg = document.getElementById("i-mute-svg")
+let audioSvg = document.getElementById("i-audio-svg")
+let heroTitle = document.getElementById("i-hero__title")
+
+let videoPlaying = false
+let muted = true
+
+video.addEventListener("playing", () => {
+  pauseSvg.style.display = "block"
+  playSvg.style.display = "none"
+  videoPlaying = true
+});
+
+video.addEventListener("pause", () => {
+  pauseSvg.style.display = "none"
+  playSvg.style.display = "block"
+  videoPlaying = false
+});
+
+// video.addEventListener("seeking", () => {
+//   output.innerHTML = "Seeking event triggered";
+// });
+
+// video.addEventListener("volumechange", () => {
+//   output.innerHTML = "Volumechange event triggered";
+// });
+
+const playPause = () => {
+  if (videoPlaying) {
+    pauseVideo()
+  } else {
+    playVideo()
+  }
+}
+
+const muteUnmute = () => {
+  video.muted = !video.muted;
+  if (video.muted) {
+    audioSvg.style.display = "block"
+    muteSvg.style.display = "none"
+  } else {
+    audioSvg.style.display = "none"
+    muteSvg.style.display = "block"
+  }
+}
 
 playVideo = () => {
-  video.play();
+
+  video.play()
+}
+
+pauseVideo = () => {
+
+  video.pause()
 }
 
 heroFadeOut = () => {
@@ -47,6 +100,7 @@ heroFadeOut = () => {
   })
 }
 
-playButton.onclick = playVideo;
+playButton.onclick = playPause;
+muteButton.onclick = muteUnmute
 
 setTimeout(heroFadeOut, 5000)
