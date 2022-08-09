@@ -74,13 +74,19 @@
     </section> -->
 
     <section class="hero">
-        <div id="i-play-button" class="c-play-button">
-            <img src="../img/play-button.svg" alt="play-button">
+        <div id="i-play-button" class="c-video-controls">
+            <img id="i-play-svg" src="../video/buttons/play.svg" alt="play-button">
+            <img id="i-pause-svg" src="../video/buttons/pause.svg" alt="pause-button">
+        </div>
+        <div id="i-mute-button" class="c-video-controls">
+            <img id="i-mute-svg" src="../video/buttons/mute.svg" alt="mute-button">
+            <img id="i-audio-svg" src="../video/buttons/audio.svg" alt="audio-button">
         </div>
         <div class="hero__bg">
 
         </div>
-        <video class="lazy" src="../video/intro_720p.mp4" loop autoplay muted poster="../video/poster_3.jpg"></video>
+        <video id="video" class="lazy" src="../video/intro_720p.mp4" loop autoplay muted
+            poster="../video/poster_3.jpg"></video>
         <div id="i-hero__title" class="hero__title ">
             <!-- N'ATTENDEZ PAS UNE BELLE JOURNÉE, MAIS <br> FAITES-EN UNE VOUS-MÊME À LA MAISON L'AVENTURE -->
             n'Attendez pas une belle journée, mais <br> faites - en une vouse-même à la Maison l'Aventure

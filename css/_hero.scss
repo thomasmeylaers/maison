@@ -16,6 +16,30 @@
   src: url("../fonts/Broadcast_Matter.ttf");
 }
 
+*::-webkit-media-controls-panel {
+
+  display: none!important;
+
+  -webkit-appearance: none;
+
+}
+
+*::--webkit-media-controls-play-button {
+
+  display: none!important;
+
+  -webkit-appearance: none;
+
+}
+
+*::-webkit-media-controls-start-playback-button {
+
+  display: none!important;
+
+  -webkit-appearance: none;
+
+}
+
 .hero {
   .c-video-controls {
     position: absolute;
@@ -36,6 +60,10 @@
   }
 
   #i-mute-svg {
+    display: none;
+  }
+
+  #i-pause-svg {
     display: none;
   }
   
