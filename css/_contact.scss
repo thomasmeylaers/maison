@@ -1,6 +1,6 @@
 .contact {
   padding-top: 5rem;
-  padding-bottom: 8rem;
+  padding-bottom: 1rem;
   position: relative;
   overflow: hidden;
   &__form {
@@ -77,18 +77,19 @@
     }
     .fixed-container {
       display: flex;
-      justify-content: space-between;
-    }
+      width: 100%;}
     &__left__wrapper {
       padding-top: 11rem;
       width: 50%;
       height: 600px;
     }
     &__right__wrapper {
-      padding-left: 3rem;
-      width: 60%;
+      padding-left: 5rem;
+      padding-right: 10rem;
+      width: 50%;
       .section__title {
         margin-bottom: 2rem;
+        width: 40rem;
         img {
           width: 2rem;
         }

@@ -47,7 +47,13 @@
       display: none;
     }
     &__form__wrapper {
-      margin-top: -240px;
+      margin-top: -390px;
+      &__mobile {
+        display: none;
+      }
+    }
+    &__form__wrapper2 {
+      margin-top: -200px;
       &__mobile {
         display: none;
       }

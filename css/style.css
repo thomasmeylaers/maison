@@ -2,21 +2,6 @@
   visibility: hidden;
 }
 
-@-webkit-keyframes fade-in {
-  from {
-    visibility: hidden;
-    opacity: 0;
-  }
-  1% {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
 @keyframes fade-in {
   from {
     visibility: hidden;
@@ -32,23 +17,7 @@
   }
 }
 .fade-in {
-  -webkit-animation: fade-in 200ms ease-in-out forwards;
-          animation: fade-in 200ms ease-in-out forwards;
-}
-
-@-webkit-keyframes fade-out {
-  from {
-    visibility: visible;
-    opacity: 1;
-  }
-  99% {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: hidden;
-    opacity: 0;
-  }
+  animation: fade-in 200ms ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -66,19 +35,7 @@
   }
 }
 .fade-out {
-  -webkit-animation: fade-out 200ms ease-in-out forwards;
-          animation: fade-out 200ms ease-in-out forwards;
-}
-
-@-webkit-keyframes navLinkFadeIn {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0px);
-  }
+  animation: fade-out 200ms ease-in-out forwards;
 }
 
 @keyframes navLinkFadeIn {
@@ -89,16 +46,6 @@
   to {
     opacity: 1;
     transform: translate(0px);
-  }
-}
-@-webkit-keyframes navLinkFadeOut {
-  from {
-    opacity: 1;
-    transform: translate(0px);
-  }
-  to {
-    opacity: 0;
-    transform: translate(50px);
   }
 }
 @keyframes navLinkFadeOut {
@@ -1034,7 +981,7 @@ a {
 
 .contact {
   padding-top: 5rem;
-  padding-bottom: 8rem;
+  padding-bottom: 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -1110,7 +1057,7 @@ a {
   }
   .contact .fixed-container {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
   }
   .contact__left__wrapper {
     padding-top: 11rem;
@@ -1118,11 +1065,13 @@ a {
     height: 600px;
   }
   .contact__right__wrapper {
-    padding-left: 3rem;
-    width: 60%;
+    padding-left: 5rem;
+    padding-right: 10rem;
+    width: 50%;
   }
   .contact__right__wrapper .section__title {
     margin-bottom: 2rem;
+    width: 40rem;
   }
   .contact__right__wrapper .section__title img {
     width: 2rem;
@@ -1358,6 +1307,7 @@ a {
   }
   .accomodaties__kamers .splide__slide img {
     width: 100%;
+    height: auto;
     margin-top: 50%;
     transform: translateY(-45%);
   }
@@ -1371,7 +1321,7 @@ a {
   }
   .accomodaties__kamers__unit__image__wrapper {
     width: 100%;
-    height: 15rem;
+    height: auto;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1477,6 +1427,7 @@ a {
   }
   .accomodaties__kamers__unit .splide__slide img {
     width: 100%;
+    height: auto;
     margin-top: 50%;
     transform: translateY(-45%);
   }
@@ -1511,10 +1462,11 @@ a {
   .accomodaties__kamers__unit__middle {
     padding: 0rem 2rem;
     padding-bottom: 1rem;
+    max-width: 450px;
   }
   .accomodaties__kamers__unit__middle .middle__title h1 {
     line-height: 2ch;
-    font-size: 40px;
+    font-size: 38px;
     margin-bottom: 0;
     margin-top: 1rem;
   }
@@ -1537,6 +1489,8 @@ a {
     margin-right: 0.7rem;
   }
   .accomodaties__kamers__unit__right {
+    margin-top: 60px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2168,6 +2122,17 @@ a {
     font-weight: 300;
     color: black;
   }
+  .contact__hero__text2 {
+    color: lightgrey;
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    margin-bottom: 3rem;
+  }
+  .contact__hero__text2 p {
+    font-weight: 300;
+    color: black;
+  }
 }
 @media (max-width: 1199.9px) {
   .contact__hero {
@@ -2235,9 +2200,15 @@ a {
     display: none;
   }
   .contact__form__form__wrapper {
-    margin-top: -240px;
+    margin-top: -390px;
   }
   .contact__form__form__wrapper__mobile {
+    display: none;
+  }
+  .contact__form__form__wrapper2 {
+    margin-top: -200px;
+  }
+  .contact__form__form__wrapper2__mobile {
     display: none;
   }
   .contact__form__img__mobile {
