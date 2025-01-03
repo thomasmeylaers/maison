@@ -291,7 +291,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
+    width: 55%;
   }
   .nav__links li {
     list-style: none;
@@ -2329,4 +2329,32 @@ a {
 *::-webkit-media-controls-start-playback-button {
   display: none !important;
   -webkit-appearance: none;
+}
+
+.arrangementen_section {
+  margin-top: 1vh;
+}
+.arrangementen_section a {
+  text-decoration: underline;
+}
+.arrangementen_section .arrangementen__hero__bg {
+  position: absolute;
+  z-index: -5;
+  background-color: #FCE8DE;
+  width: 100%;
+  height: 100%;
+}
+.arrangementen_section .fixed-container {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.arrangementen_section .information_block {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+.arrangementen_section .information_block_title {
+  font-weight: 800;
 }/*# sourceMappingURL=style.css.map */
