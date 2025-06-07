@@ -1,0 +1,86 @@
+$heroBackgroundHeightLarge: 42vh;
+$heroBackgroundHeightSmall: 30vh;
+.hero {
+    margin-top: 8vh;
+    position: relative;
+    @include breakpoint-up(large) {
+        &__background {
+            position: absolute;
+            background-color: $lightOrange;
+            height: $heroBackgroundHeightLarge;
+            width: 100%;
+            z-index: -100;
+        }
+        &__slogan {
+            padding: 0 10rem;
+            width: 100%;
+            text-align: center;
+            h1 {
+                font-size: 80px;
+                margin: 0;
+                padding-top: 3rem;
+                margin-bottom: 2rem;
+            }
+        }
+        &__images {
+            padding: 0 0rem;
+            display: flex;
+            align-items: center;
+            // justify-content: space-evenly;
+            justify-content: space-between;
+            width: 100%;
+            img {
+                border-radius: 30px;
+            }
+            #img1 {
+                width: 30%;
+            }
+            #img2 {
+                width: 40%;
+            }
+            #img3 {
+                width: 28%;
+            }
+        }
+        &__isolijnen {
+            position: absolute;
+        }
+        #iso1 {
+            top: calc(42vh - 256px);
+        }
+        #iso2 {
+            top: $heroBackgroundHeightLarge
+        }
+    }
+    @include breakpoint-down(large) {
+        margin-top: 10vh;
+        &__background {
+            display: none;
+        }
+        &__isolijnen {
+            display: none;
+        }
+        &__images {
+            display: none;
+        }
+        &__slogan {
+            text-align: center;
+            h1 {
+                font-weight: 700;
+                line-height: 2ch;
+                font-size: 34px;
+                letter-spacing: 1px;
+                margin-top: 2rem;
+            }
+        }
+        &__mobile__image {
+            height: 300px;
+            width: 100%;
+            background-image: url("../img/Maison-Laventure_3.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 30px;
+        }
+    }
+}

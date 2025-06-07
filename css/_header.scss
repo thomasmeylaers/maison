@@ -1,0 +1,35 @@
+.header {
+    background-color: $lightOrange;
+    a {
+        font-size: large;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 20rem;
+        }
+    }
+    &__page_links {
+        a {
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+    &__languages {
+        a {
+            &:not(:last-child) {
+                margin-right: 0.5rem;
+            }
+        }
+        i {
+            margin-right: 0.5rem;
+        }
+    }
+    @include breakpoint-up(large) {}
+    @include breakpoint-down(large) {
+        background-color: white;
+    }
+}

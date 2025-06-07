@@ -1,0 +1,71 @@
+.accomodaties__gite {
+    margin: 5rem 0;
+    margin-bottom: 0;
+    padding: 15rem 0;
+    position: relative;
+    z-index: -1;
+    // overflow: hidden;
+    background-color: $darkGreen;
+    &__hero {
+        &__wrapper {
+            color: white;
+        }
+        @include breakpoint-up(large) {
+            &__wrapper {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+            }
+            &__text {
+                width: 75%;
+                font-size: 16px;
+                line-height: 2.5ch;
+                font-weight: 300;
+            }
+            margin-top: 20vh;
+        }
+        @include breakpoint-down(large) {
+            margin-top: 25vh;
+            &__text {
+                text-align: justify;
+                font-size: 16px;
+                line-height: 2ch;
+                font-weight: 300;
+            }
+        }
+    }
+    @include breakpoint-up(large) {
+        .container {
+            padding: 0 5rem;
+        }
+        &__isolijnen__1 {
+            position: absolute;
+            z-index: -5;
+            top: -450px;
+            right: -450px;
+        }
+        &__isolijnen__2 {
+            position: absolute;
+            z-index: -5;
+            top: 250px;
+            left: -500px;
+            scale: 0.6;
+        }
+    }
+    @include breakpoint-down(large) {
+        &__isolijnen__1 {
+            position: absolute;
+            z-index: -5;
+            top: -500px;
+            right: -450px;
+            scale: 0.4;
+        }
+        &__isolijnen__2 {
+            position: absolute;
+            z-index: -5;
+            bottom: -15rem;
+            left: -600px;
+            scale: 0.4;
+        }
+    }
+}

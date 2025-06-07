@@ -1,0 +1,87 @@
+.activiteiten__hero {
+  position: relative;
+  overflow: hidden;
+  @include breakpoint-up(xlarge) {
+    margin-top: 8vh;
+    height: 92vh;
+    &__bg {
+      position: absolute;
+      z-index: -5;
+      background-color: $lightOrange;
+      width: 100%;
+      height: 100%;
+    }
+    &__title {
+      padding-top: 15%;
+      font-size: 60px;
+      font-weight: bold;
+    }
+    &__text {
+      margin-top: 1rem;
+      width: 35%;
+      font-weight: 300;
+    }
+    &__button {
+      margin-top: 2rem;
+      button {
+        background-color: $darkOrange;
+        color: white;
+      }
+    }
+    &__compass {
+      bottom: -70px;
+      left: -30px;
+      position: absolute;
+      margin: 0;
+      z-index: -1;
+      padding: 0;
+      img {
+        width: 13rem;
+        transform: rotate(45deg);
+      }
+    }
+    &__img {
+      width: 50%;
+      position: absolute;
+      height: 100%;
+      background-image: url("../img/activiteiten/cedric.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      right: 0;
+      top: 0;
+    }
+  }
+  @include breakpoint-down(xlarge) {
+    margin-top: 13vh;
+    &__title {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    &__text {
+      margin-bottom: 3rem;
+    }
+    &__compass {
+      display: none;
+      // position: absolute;
+      // bottom: -40px;
+      // left: -20px;
+      // img {
+      //     width: 5rem;
+      //     transform: rotate(45deg);
+      // }
+    }
+    &__button {
+      display: none;
+    }
+    &__img {
+      width: 100%;
+      height: 250px;
+      background-image: url("../img/activiteiten/compressed/cedric.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}

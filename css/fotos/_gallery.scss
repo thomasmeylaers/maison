@@ -1,0 +1,25 @@
+.lightGalleryBody {
+  background-color: $lightOrange;
+}
+#lightgallery {
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 5rem;
+  max-width: 80%;
+  text-align: center;
+  overflow-x: hidden;
+  img {
+    margin: 0rem 0.2rem;
+    border-radius: 30px;
+  }
+  @include breakpoint-up(large) {
+    img {
+      height: 300px;
+    }
+  }
+  @include breakpoint-down(medium) {
+    img {
+      width: 100%;
+    }
+  }
+}

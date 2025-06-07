@@ -1,0 +1,6 @@
+.accomodaties__nav {
+    background-color: white;
+    @include breakpoint-down(large) {
+        background-color: $lightOrange !important;
+    }
+}

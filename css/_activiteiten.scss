@@ -1,0 +1,127 @@
+.activiteiten {
+  margin-top: 5rem;
+  background-color: $darkGreen;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  @include breakpoint-up(xlarge) {
+    height: 900px;
+    .isolijnen {
+      position: absolute;
+      &__1 {
+        top: -370px;
+        right: -500px;
+      }
+      &__2 {
+        position: absolute;
+        width: 500px;
+        bottom: -194px;
+        left: -165px;
+      }
+    }
+    button {
+      margin-top: 4rem;
+    }
+    &__img {
+      position: absolute;
+      -webkit-transform: scale(0.7);
+      -moz-transform: scale(0.7);
+      -o-transform: scale(0.7);
+      transform: scale(0.7);
+      &__fietsen {
+        top: 0px;
+        border-radius: 40px;
+        right: 300px;
+        width: 500px;
+      }
+      &__petanque {
+        top: 100px;
+        right: -100px;
+        border-radius: 40px;
+      }
+      &__zwemmen {
+        top: 380px;
+        right: 400px;
+        border-radius: 40px;
+      }
+      &__wandelen {
+        top: 600px;
+        right: 0px;
+        width: 500px;
+        border-radius: 40px;
+      }
+      &__paardrijden {
+        top: 400px;
+        right: 720px;
+        width: 400px;
+        border-radius: 40px;
+      }
+      &__vissen {
+        top: 600px;
+        right: 750px;
+        border-radius: 40px;
+        width: 500px;
+      }
+    }
+    &__text__wrapper {
+      width: 40%;
+      margin-left: 0rem;
+      line-height: 2.5ch;
+    }
+  }
+  @include breakpoint-down(xlarge) {
+    // height: 90vh;
+    padding-bottom: 5rem;
+    .isolijnen {
+      position: absolute;
+      &__1 {
+        width: 500px;
+        top: -200px;
+        right: -200px;
+      }
+      &__2 {
+        width: 250px;
+        bottom: -100px;
+        left: -100px;
+      }
+    }
+    &__img {
+      display: none;
+    }
+    .fixed-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__text__wrapper {
+      margin-top: 3rem;
+      line-height: 2ch;
+      margin: auto;
+      button {
+        margin-top: 2rem;
+      }
+    }
+  }
+  @include breakpoint-up(xlarge) {
+    .isolijnen {
+      position: absolute;
+
+      &__2 {
+        width: 400px;
+        bottom: -155px;
+        left: -132px;
+      }
+    }
+  }
+  @include breakpoint-down(large) {
+    .isolijnen {
+      position: absolute;
+
+      &__2 {
+        width: 214px;
+        bottom: -83px;
+        left: -71px;
+      }
+    }
+  }
+}
