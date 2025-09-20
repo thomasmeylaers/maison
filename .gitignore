@@ -1,3 +1,24 @@
 node_modules/
 .venv/
 .env
+# Ignore all common image formats
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.webp
+*.svg
+*.ico
+
+# Ignore all common video formats
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.webm
+*.mpeg
+*.mpg
